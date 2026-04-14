@@ -1,0 +1,333 @@
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+}
+.dark body {
+  background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+}
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Professional gradient backgrounds for sections */
+#projects {
+  background: linear-gradient(135deg, #3b82f6 0%, #06b6d4 100%);
+}
+.dark #projects {
+  background: linear-gradient(135deg, #1e40af 0%, #0891b2 100%);
+}
+
+#contact {
+  background: linear-gradient(135deg, #10b981 0%, #34d399 100%);
+}
+.dark #contact {
+  background: linear-gradient(135deg, #047857 0%, #10b981 100%);
+}
+
+/* Scroll Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes scaleIn {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 0.6s ease-out;
+}
+
+.animate-on-scroll.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.animate-left {
+  opacity: 0;
+  transform: translateX(-30px);
+  transition: all 0.6s ease-out;
+}
+
+.animate-left.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate-right {
+  opacity: 0;
+  transform: translateX(30px);
+  transition: all 0.6s ease-out;
+}
+
+.animate-right.animate {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.animate-scale {
+  opacity: 0;
+  transform: scale(0.9);
+  transition: all 0.6s ease-out;
+}
+
+.animate-scale.animate {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn { animation: fadeIn 1s ease forwards; }
+.animate-slideUp { animation: slideUp 1s ease forwards; }
+
+/* Professional card hover effects */
+.project-card {
+  transition: all 0.3s ease;
+}
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+/* Mobile responsiveness improvements */
+@media (max-width: 768px) {
+  .project-card:hover {
+    transform: none;
+  }
+
+  nav .space-x-8 > * + * {
+    margin-left: 1rem;
+  }
+
+  .contact-form {
+    padding: 1.5rem !important;
+    margin: 0 1rem;
+  }
+
+  .animate-on-scroll,
+  .animate-left,
+  .animate-right,
+  .animate-scale {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact-form {
+    max-width: none !important;
+    padding: 1rem !important;
+  }
+
+  .text-5xl {
+    font-size: 2.5rem !important;
+  }
+
+  .text-7xl {
+    font-size: 3.5rem !important;
+  }
+}
+
+/* Form improvements */
+.contact-form input,
+.contact-form textarea {
+  transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(59, 130, 246, 0.15);
+}
+
+.contact-form label {
+  font-weight: 600;
+  color: #1f2937; /* gray-800 */
+}
+
+.dark .contact-form label {
+  color: #d1d5db; /* gray-300 */
+}
+
+/* Enhanced focus states */
+.focused label {
+  color: #3b82f6;
+}
+
+.focused input,
+.focused textarea {
+  border-color: #3b82f6 !important;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Professional animations with cubic-bezier */
+.animate-on-scroll,
+.animate-left,
+.animate-right,
+.animate-scale {
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Staggered animation delays for better flow */
+.animate-on-scroll:nth-child(1) { transition-delay: 0.1s; }
+.animate-on-scroll:nth-child(2) { transition-delay: 0.2s; }
+.animate-on-scroll:nth-child(3) { transition-delay: 0.3s; }
+.animate-left:nth-child(1) { transition-delay: 0.1s; }
+.animate-left:nth-child(2) { transition-delay: 0.2s; }
+.animate-right:nth-child(1) { transition-delay: 0.1s; }
+.animate-right:nth-child(2) { transition-delay: 0.2s; }
+
+/* Enhanced button hover effects */
+button:hover, 
+.contact-form button:hover {
+  transform: translateY(-2px) scale(1.02);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Professional shadow effects */
+.contact-form {
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+
+.contact-form:hover {
+  box-shadow: 0 20px 40px -10px rgba(0, 0, 0, 0.15), 0 10px 25px -5px rgba(0, 0, 0, 0.1);
+}
+
+/* Experience Section - Git Timeline Styles */
+#experience {
+  position: relative;
+  overflow: hidden;
+}
+
+#experience .relative {
+  position: relative;
+}
+
+#experience .absolute {
+  position: absolute;
+  left: 2rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, #3b82f6, #10b981);
+  z-index: 1;
+}
+
+#experience .space-y-12 > * {
+  position: relative;
+  z-index: 2;
+}
+
+#experience .flex-shrink-0 {
+  position: relative;
+  z-index: 3;
+  transition: all 0.3s ease;
+}
+
+#experience .flex-shrink-0:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+#experience .bg-white,
+#experience .dark\\:bg-gray-800 {
+  transition: all 0.3s ease;
+  border-left: 4px solid;
+}
+
+#experience .bg-white:hover,
+#experience .dark\\:bg-gray-800:hover {
+  transform: translateX(8px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* Git commit pulse animation */
+@keyframes commitPulse {
+  0% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0.4);
+  }
+  70% {
+    box-shadow: 0 0 0 10px rgba(59, 130, 246, 0);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(59, 130, 246, 0);
+  }
+}
+
+.experience-commit {
+  animation: commitPulse 2s infinite;
+}
+
+/* Mobile adjustments for experience section */
+@media (max-width: 768px) {
+  #experience .absolute {
+    left: 1.5rem;
+  }
+
+  #experience .flex-shrink-0 {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  #experience .ml-8 {
+    margin-left: 2rem;
+  }
+
+  #experience .bg-white,
+  #experience .dark\\:bg-gray-800 {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  #experience .bg-white:hover,
+  #experience .dark\\:bg-gray-800:hover {
+    transform: translateY(4px);
+  }
+}
