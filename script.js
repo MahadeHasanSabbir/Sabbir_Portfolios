@@ -51,7 +51,7 @@ document.querySelectorAll('.animate-on-scroll, .animate-left, .animate-right, .a
 document.addEventListener('DOMContentLoaded', () => {
   const form = document.querySelector('.contact-form');
   if (form) {
-    const inputs = form.querySelectorAll('input, textarea');
+    const inputs = form.querySelectorAll('input[type="text"], input[type="email"], textarea');
 
     inputs.forEach(input => {
       input.addEventListener('focus', () => {
@@ -65,25 +65,23 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
 
-    // Check for success parameter in URL
-    const urlParams = new URLSearchParams(window.location.search);
-    if (urlParams.get('success') === 'true') {
-      // Create success message
-      const successMessage = document.createElement('div');
-      successMessage.className = 'success-message bg-green-100 dark:bg-green-900 border border-green-400 text-green-700 dark:text-green-300 px-4 py-3 rounded-lg mb-6 animate-on-scroll';
-      successMessage.innerHTML = '<div class="flex items-center"><svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>Thank you! Your message has been sent successfully.</div>';
-
-      form.parentNode.insertBefore(successMessage, form);
-
-      // Remove success parameter from URL
-      const newUrl = window.location.pathname + window.location.hash;
-      window.history.replaceState({}, document.title, newUrl);
-
-      // Auto-hide success message after 5 seconds
+    // Handle form submission
+    form.addEventListener('submit', (e) => {
+      const submitBtn = form.querySelector('button[type="submit"]');
+      const originalHTML = submitBtn.innerHTML;
+      
+      // Show loading state
+      submitBtn.disabled = true;
+      submitBtn.classList.add('opacity-70');
+      submitBtn.innerHTML = '<svg class="w-5 h-5 animate-spin inline-block" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M4.293 5.293a1 1 0 011.414 0A7 7 0 0016.414 10a1 1 0 11-2 0 5 5 0 10-2 0 1 1 0 112 0 7 7 0 11-9.414-6.707 1 1 0 010 1.414z" clip-rule="evenodd"></path></svg> Sending...';
+      
+      // The form will be submitted to Netlify by default
+      // Revert button state after timeout
       setTimeout(() => {
-        successMessage.style.opacity = '0';
-        setTimeout(() => successMessage.remove(), 300);
-      }, 5000);
-    }
+        submitBtn.disabled = false;
+        submitBtn.classList.remove('opacity-70');
+        submitBtn.innerHTML = originalHTML;
+      }, 2000);
+    });
   }
 });

@@ -124,7 +124,7 @@
         <p class="text-sm text-blue-100 mb-3">Land survey tool for area calculation.</p>
         <p class="text-xs mb-4 text-blue-200">HTML, CSS, JS, PHP, MySQL</p>
         <div class="flex justify-between">
-          <a href="#" class="text-blue-300 hover:text-white transition">Live Demo</a>
+          <!-- <a href="#" class="text-blue-300 hover:text-white transition">Live Demo</a> -->
           <a href="https://github.com/MahadeHasanSabbir/Aminship" target="_blank" class="text-blue-300 hover:text-white transition">GitHub</a>
         </div>
       </div>
@@ -134,7 +134,7 @@
         <p class="text-sm text-blue-100 mb-3">Property management system.</p>
         <p class="text-xs mb-4 text-blue-200">HTML, CSS, JS, PHP, MySQL</p>
         <div class="flex justify-between">
-          <a href="#" class="text-blue-300 hover:text-white transition">Live Demo</a>
+          <!-- <a href="#" class="text-blue-300 hover:text-white transition">Live Demo</a> -->
           <a href="https://github.com/MahadeHasanSabbir/property-management" target="_blank" class="text-blue-300 hover:text-white transition">GitHub</a>
         </div>
       </div>
@@ -144,7 +144,7 @@
         <p class="text-sm text-blue-100 mb-3">Online bidding platform.</p>
         <p class="text-xs mb-4 text-blue-200">Laravel, Tailwind, MySQL</p>
         <div class="flex justify-between">
-          <a href="#" class="text-blue-300 hover:text-white transition">Live Demo</a>
+          <!-- <a href="#" class="text-blue-300 hover:text-white transition">Live Demo</a> -->
           <a href="https://github.com/MahadeHasanSabbir/Auction-app" target="_blank" class="text-blue-300 hover:text-white transition">GitHub</a>
         </div>
       </div>
@@ -180,7 +180,7 @@
             <ul class="text-gray-600 dark:text-gray-300 space-y-2 mb-4">
               <li class="flex items-start">
                 <span class="text-blue-500 mr-2 mt-1">•</span>
-                Developed and maintained OTA backend systems using PHP and Laravel
+                Developed and maintained OTA backend systems using PHP
               </li>
               <li class="flex items-start">
                 <span class="text-blue-500 mr-2 mt-1">•</span>
@@ -209,7 +209,7 @@
             </ul>
             <div class="flex flex-wrap gap-2">
               <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">PHP</span>
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Laravel</span>
+              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Server Operations</span>
               <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">MySQL</span>
               <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">REST APIs</span>
               <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">OTA Systems</span>
@@ -254,7 +254,6 @@
             </ul>
             <div class="flex flex-wrap gap-2">
               <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">PHP</span>
-              <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">Laravel</span>
               <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">MySQL</span>
               <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">REST APIs</span>
               <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">Internship</span>
@@ -299,8 +298,9 @@
     <h2 class="text-4xl font-bold mb-6 text-gray-800 dark:text-white animate-on-scroll">Get In Touch</h2>
     <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 animate-on-scroll">Let's discuss your next project</p>
 
-    <form name="contact" method="POST" data-netlify="true" action="/?success=true#contact" class="contact-form space-y-6 w-full max-w-lg bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm p-8 rounded-2xl shadow-2xl border border-gray-200/50 dark:border-white/20 mx-auto">
+    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" class="contact-form space-y-6 w-full max-w-lg bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm p-8 rounded-2xl shadow-2xl border border-gray-200/50 dark:border-white/20 mx-auto">
       <input type="hidden" name="form-name" value="contact" />
+      <input type="hidden" name="bot-field" />
 
       <div class="animate-left">
         <label for="name" class="block text-left text-gray-800 dark:text-gray-300 font-medium mb-2 text-sm">Your Name</label>
