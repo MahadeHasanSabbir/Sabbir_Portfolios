@@ -13,7 +13,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Preload Critical Assets -->
-  <link rel="preload" href="hero-bg-1.jpg" as="image">
+  <!-- <link rel="preload" href="hero-bg-1.jpg" as="image"> -->
   <link rel="preload" href="profile-photo.png" as="image">
   
   <!-- Critical Styles -->
@@ -24,532 +24,713 @@
 <body class="transition-colors duration-300">
 
 
-<!-- ===================== NAVBAR ===================== -->
-<nav class="fixed w-full bg-slate-900/80 backdrop-blur-md shadow-xl z-50 transition-all duration-300 border-b border-white/5">
+  <!-- ===================== NAVBAR ===================== -->
+  <nav
+    class="fixed w-full bg-slate-900/80 backdrop-blur-md shadow-xl z-50 transition-all duration-300 border-b border-white/5">
 
 
-  <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-    <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">Sabbir</h1>
-
-    <div class="flex items-center gap-8">
-      <div class="space-x-8 hidden md:flex">
-        <a href="#about" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition font-medium">About</a>
-        <a href="#services" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition font-medium">Services</a>
-        <a href="#projects" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition font-medium">Projects</a>
-
-        <a href="#experience" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition font-medium">Experience</a>
-        <a href="#resume" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition font-medium">Resume</a>
-        <a href="#contact" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition font-medium">Contact</a>
-      </div>
-
-
-    </div>
-  </div>
-</nav>
-
-<!-- ===================== HERO ===================== -->
-<section id="hero" class="min-h-screen flex flex-col justify-center items-center text-center px-4 animate-fadeIn relative overflow-hidden py-16 md:py-20">
-  <!-- Background Image -->
-  <div class="absolute inset-0 bg-gradient-to-br from-slate-50 to-blue-100 dark:from-slate-900 dark:to-slate-800">
-    <img src="hero-bg-1.jpg" alt="Background" class="w-full h-full object-cover opacity-10" loading="eager" fetchpriority="high" decoding="async" onerror="this.style.display='none'">
-
-  </div>
-
-
-
-  <div class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12 px-4">
-    <!-- Text Content -->
-    <div class="md:w-3/4 flex flex-col items-center md:items-start text-center md:text-left order-2 md:order-1">
-      <h1 class="text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-green-400 bg-clip-text text-transparent leading-tight animate-on-scroll whitespace-nowrap overflow-visible">
-        Md Mahade Hasan Sabbir
+    <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">Sabbir
       </h1>
 
+      <div class="flex items-center gap-8">
+        <div class="space-x-8 hidden md:flex">
+          <a href="#about"
+            class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition font-medium">About</a>
+          <a href="#services"
+            class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition font-medium">Services</a>
+          <a href="#projects"
+            class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition font-medium">Projects</a>
+
+          <a href="#experience"
+            class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition font-medium">Experience</a>
+          <a href="#resume"
+            class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition font-medium">Resume</a>
+          <a href="#contact"
+            class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition font-medium">Contact</a>
+        </div>
 
 
-      <div class="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6 md:mb-8 animate-on-scroll min-h-[1.6em] flex items-center justify-center md:justify-start">
-        <span id="typed-text"></span>
-      </div>
-
-      <p class="text-base sm:text-lg text-gray-500 dark:text-gray-400 mb-6 md:mb-8 max-w-2xl animate-on-scroll px-4 md:px-0">
-        Passionate about creating scalable web applications and robust APIs with modern technologies
-      </p>
-      <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start w-full animate-on-scroll">
-        <a href="#projects" class="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition transform hover:scale-105 shadow-lg text-sm sm:text-base">
-          View My Work
-        </a>
-        <a href="#contact" class="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition transform hover:scale-105 text-sm sm:text-base">
-          Get In Touch
-        </a>
       </div>
     </div>
+  </nav>
 
-    <!-- Profile Photo -->
-    <div class="md:w-1/4 flex justify-center order-1 md:order-2 flex-shrink-0">
+  <!-- ===================== HERO ===================== -->
+  <section id="hero"
+    class="min-h-screen flex flex-col justify-center items-center text-center px-4 animate-fadeIn relative overflow-hidden py-16 md:py-20">
+    <!-- Background Image -->
+    <!-- <div class="absolute inset-0 bg-gradient-to-br from-slate-50 to-blue-100 dark:from-slate-900 dark:to-slate-800">
+      <img src="hero-bg-1.jpg" alt="Background" class="w-full h-full object-cover opacity-10" loading="eager"
+        fetchpriority="high" decoding="async" onerror="this.style.display='none'">
+
+    </div> -->
+
+
+
+    <div
+      class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12 px-4">
+      <!-- Text Content -->
+      <div class="md:w-3/4 flex flex-col items-center md:items-start text-center md:text-left order-2 md:order-1">
+        <h1
+          class="text-lg sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-green-400 bg-clip-text text-transparent leading-tight animate-on-scroll whitespace-nowrap">
+          Md Mahade Hasan Sabbir
+        </h1>
+
+
+
+        <div
+          class="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6 md:mb-8 animate-on-scroll min-h-[1.6em] flex items-center justify-center md:justify-start">
+          <span id="typed-text"></span>
+        </div>
+
+        <p
+          class="text-base sm:text-lg text-gray-500 dark:text-gray-400 mb-6 md:mb-8 max-w-2xl animate-on-scroll px-4 md:px-0">
+          Passionate about creating scalable web applications and robust APIs with modern technologies
+        </p>
+        <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start w-full animate-on-scroll">
+          <a href="#projects"
+            class="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition transform hover:scale-105 shadow-lg text-sm sm:text-base">
+            View My Work
+          </a>
+          <a href="#contact"
+            class="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition transform hover:scale-105 text-sm sm:text-base">
+            Get In Touch
+          </a>
+        </div>
+      </div>
+
+      <!-- Profile Photo -->
+      <div class="md:w-1/4 flex justify-center order-1 md:order-2 flex-shrink-0">
+
+        <div class="relative">
+          <img src="profile-photo.png" alt="Md Mahade Hasan Sabbir"
+            class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 rounded-full object-cover shadow-2xl border-4 border-white dark:border-gray-700"
+            loading="eager" decoding="async"
+            onerror="this.src='https://via.placeholder.com/256x256/3b82f6/ffffff?text=Profile+Photo'">
+
+          <div class="absolute inset-0 rounded-full bg-gradient-to-t from-black/20 to-transparent"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section id="about" class="flex flex-col justify-center items-center px-4 py-20 animate-slideUp">
+
+    <div class="max-w-6xl mx-auto w-full">
+      <h2 class="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white animate-on-scroll">About Me</h2>
+
+      <div class="flex flex-col lg:flex-row items-center gap-12 px-4 md:px-0">
+
+        <!-- Profile Image -->
+        <div class="lg:w-1/2 flex justify-center">
+          <div class="relative w-full max-w-xs sm:max-w-sm md:max-w-md">
+            <img src="about.png" alt="About Md Mahade Hasan Sabbir"
+              class="w-full aspect-[3/5] object-cover rounded-2xl shadow-2xl" loading="lazy" decoding="async"
+              onerror="this.src='https://via.placeholder.com/384x640/10b981/ffffff?text=About+Photo'">
+
+            <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/10 to-transparent"></div>
+          </div>
+        </div>
+
+        <!-- Description -->
+        <div class="lg:w-1/2">
+          <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed animate-on-scroll text-justify">
+
+            I am a results-driven Back-end Developer with years of professional experience in architecting and
+            maintaining scalable web applications.
+            I specialize in building robust APIs and secure, high-performance systems using the PHP and Laravel
+            ecosystem.
+            My focus is on creating efficient, maintainable code that drives business value and solves complex technical
+            challenges.
+
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Backend -->
+            <div
+              class="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:shadow-md transition-all animate-left">
+              <div class="flex items-center gap-4 mb-4">
+                <div class="p-3 bg-blue-500/10 rounded-xl text-blue-600">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01">
+                    </path>
+                  </svg>
+                </div>
+                <h3 class="font-bold text-lg">Backend Core</h3>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg text-xs font-semibold uppercase tracking-wider">PHP</span>
+                <span
+                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Laravel</span>
+                <span
+                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Node.js</span>
+                <span
+                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg text-xs font-semibold uppercase tracking-wider">RESTful
+                  APIs</span>
+              </div>
+            </div>
+
+            <!-- Database -->
+            <div
+              class="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:shadow-md transition-all animate-right">
+              <div class="flex items-center gap-4 mb-4">
+                <div class="p-3 bg-green-500/10 rounded-xl text-green-600">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7c-2 0-3 1-3 3zm0 4h16m-16 4h16"></path>
+                  </svg>
+                </div>
+                <h3 class="font-bold text-lg">Architecture</h3>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-lg text-xs font-semibold uppercase tracking-wider">MySQL</span>
+                <span
+                  class="px-3 py-1 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Database
+                  Optimization</span>
+                <span
+                  class="px-3 py-1 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Schema
+                  Design</span>
+              </div>
+
+            </div>
+
+            <!-- Tools -->
+            <div
+              class="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:shadow-md transition-all animate-left">
+              <div class="flex items-center gap-4 mb-4">
+                <div class="p-3 bg-purple-500/10 rounded-xl text-purple-600">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z">
+                    </path>
+                  </svg>
+                </div>
+                <h3 class="font-bold text-lg">Infrastructure</h3>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Git
+                  / GitHub</span>
+                <span
+                  class="px-3 py-1 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Docker</span>
+                <span
+                  class="px-3 py-1 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 rounded-lg text-xs font-semibold uppercase tracking-wider">CI/CD</span>
+                <span
+                  class="px-3 py-1 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Postman</span>
+              </div>
+            </div>
+
+            <!-- Frontend -->
+            <div
+              class="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:shadow-md transition-all animate-right">
+              <div class="flex items-center gap-4 mb-4">
+                <div class="p-3 bg-orange-500/10 rounded-xl text-orange-600">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+                    </path>
+                  </svg>
+                </div>
+                <h3 class="font-bold text-lg">Ecosystem</h3>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-300 rounded-lg text-xs font-semibold uppercase tracking-wider">JavaScript
+                  (ES6+)</span>
+                <span
+                  class="px-3 py-1 bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Tailwind
+                  CSS</span>
+                <span
+                  class="px-3 py-1 bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Modern
+                  UI Design</span>
+              </div>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+  </section>
+
+  <!-- ===================== SERVICES ===================== -->
+  <section id="services" class="py-20 bg-gray-50/10 dark:bg-gray-900/10">
+    <div class="max-w-5xl mx-auto px-4 md:px-0">
+
+      <h2 class="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white animate-on-scroll">What I Do</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-2 md:px-0">
+        <!-- Scalable Systems -->
+        <div
+          class="p-8 bg-blue-500/5 dark:bg-blue-400/5 rounded-3xl border border-blue-500/10 animate-on-scroll hover:bg-blue-500/10 transition-colors">
+          <h3 class="text-blue-600 dark:text-blue-400 font-bold mb-4 text-xl">Scalable Backend</h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Architecting high-performance server-side logic
+            and managing large-scale data migrations with precision and reliability.</p>
+        </div>
+
+        <!-- API Architecture -->
+        <div
+          class="p-8 bg-purple-500/5 dark:bg-purple-400/5 rounded-3xl border border-purple-500/10 animate-on-scroll hover:bg-purple-500/10 transition-colors">
+          <h3 class="text-purple-600 dark:text-purple-400 font-bold mb-4 text-xl">API Architecture</h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Designing secure, documented RESTful services that
+            serve as the high-performance backbone for modern web and mobile apps.</p>
+        </div>
+
+        <!-- Optimization -->
+        <div
+          class="p-8 bg-green-500/5 dark:bg-green-400/5 rounded-3xl border border-green-500/10 animate-on-scroll hover:bg-green-500/10 transition-colors">
+          <h3 class="text-green-600 dark:text-green-400 font-bold mb-4 text-xl">Optimization</h3>
+          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Tuning database queries and server response times
+            to ensure a seamless, lag-free experience for high-traffic environments.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== PROJECTS ===================== -->
+  <section id="projects" class="min-h-screen flex flex-col justify-center items-center px-4 py-20 transition">
+    <div class="max-w-6xl mx-auto text-center w-full">
+      <h2 class="text-4xl font-bold mb-8 md:mb-12 text-white animate-on-scroll">My Projects</h2>
+
+      <!-- Swiper Container -->
+      <div class="swiper projectsSwiper w-full h-auto lg:h-[80vh]">
+
+        <div class="swiper-wrapper">
+          <!-- Project 1 -->
+          <div class="swiper-slide flex items-center justify-center p-4">
+            <div
+              class="project-card flex flex-col lg:flex-row rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
+
+              <!-- Image Side -->
+              <div class="lg:w-3/5 relative h-64 lg:h-full bg-gray-100 dark:bg-gray-800">
+                <img src="https://images.unsplash.com/photo-1500382017468-9049fee74a62?auto=format&fit=crop&q=80&w=1200"
+                  alt="Aminship Project" class="w-full h-full object-cover" decoding="async" loading="lazy">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent lg:hidden"></div>
+              </div>
+              <!-- Content Side -->
+              <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
+                <span class="text-blue-600 dark:text-blue-400 font-bold uppercase tracking-widest text-sm mb-4">Land
+                  Survey Tool</span>
+                <h3 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Aminship</h3>
+                <div class="space-y-6 mb-8">
+                  <div>
+                    <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
+                      <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                      Problem Solved
+                    </h4>
+                    <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed">Developed a professional land
+                      survey tool for accurate area calculation, helping surveyors and landowners measure complex land
+                      parcels with precision and ease.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
+                      <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 20l4-16m4 4l4 4m-4 12l4-4m-12 0l-4-4m4-4l-4-4"></path>
+                      </svg>
+                      Technologies
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                      <span
+                        class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium">PHP</span>
+                      <span
+                        class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium">MySQL</span>
+                      <span
+                        class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium">JavaScript</span>
+                      <span
+                        class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium">Bootstrap
+                        CSS</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="https://github.com/MahadeHasanSabbir/Aminship" target="_blank"
+                  class="inline-flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-xl">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  Project Source
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="swiper-slide flex items-center justify-center p-4">
+            <div
+              class="project-card flex flex-col lg:flex-row rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
+
+              <!-- Image Side -->
+              <div class="lg:w-3/5 relative h-64 lg:h-full bg-gray-100 dark:bg-gray-800">
+                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1200"
+                  alt="Property Management" class="w-full h-full object-cover" decoding="async" loading="lazy">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent lg:hidden"></div>
+              </div>
+              <!-- Content Side -->
+              <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
+                <span class="text-green-600 dark:text-green-400 font-bold uppercase tracking-widest text-sm mb-4">Real
+                  Estate Solutions</span>
+                <h3 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Property Management</h3>
+                <div class="space-y-6 mb-8">
+                  <div>
+                    <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
+                      <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                      Problem Solved
+                    </h4>
+                    <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed">Streamlined property listings,
+                      tenant management, and rental operations. Built to simplify the complex workflow of property
+                      managers and owners.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
+                      <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 20l4-16m4 4l4 4m-4 12l4-4m-12 0l-4-4m4-4l-4-4"></path>
+                      </svg>
+                      Technologies
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                      <span
+                        class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">PHP</span>
+                      <span
+                        class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">MySQL</span>
+                      <span
+                        class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Bootstrap
+                        CSS</span>
+                      <span
+                        class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Ajax</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="https://github.com/MahadeHasanSabbir/property-management" target="_blank"
+                  class="inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-xl">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  Project Source
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="swiper-slide flex items-center justify-center p-4">
+            <div
+              class="project-card flex flex-col lg:flex-row rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
+
+              <!-- Image Side -->
+              <div class="lg:w-3/5 relative h-64 lg:h-full bg-gray-100 dark:bg-gray-800">
+                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=1200"
+                  alt="Auction App" class="w-full h-full object-cover" decoding="async" loading="lazy">
+
+                <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent lg:hidden"></div>
+              </div>
+              <!-- Content Side -->
+              <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
+                <span
+                  class="text-purple-600 dark:text-purple-400 font-bold uppercase tracking-widest text-sm mb-4">E-Commerce
+                  Platform</span>
+                <h3 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Auction Application</h3>
+                <div class="space-y-6 mb-8">
+                  <div>
+                    <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
+                      <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                      Problem Solved
+                    </h4>
+                    <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed">Built a full-featured bidding
+                      platform with real-time updates. Enables secure user registration, bid management, and transaction
+                      tracking.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
+                      <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 20l4-16m4 4l4 4m-4 12l4-4m-12 0l-4-4m4-4l-4-4"></path>
+                      </svg>
+                      Technologies
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                      <span
+                        class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Laravel</span>
+                      <span
+                        class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Tailwind
+                        CSS</span>
+                      <span
+                        class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">MySQL</span>
+                      <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Laravel Blead</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="https://github.com/MahadeHasanSabbir/Auction-app" target="_blank"
+                  class="inline-flex items-center justify-center gap-3 bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-xl">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  Project Source
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+
+
+        <!-- Pagination -->
+        <div class="swiper-pagination !bottom-4"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== EXPERIENCE ===================== -->
+  <section id="experience"
+    class="min-h-screen flex flex-col justify-center items-center px-4 py-20 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-900">
+    <div class="max-w-6xl mx-auto w-full">
+      <h2 class="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white animate-on-scroll">Experience</h2>
 
       <div class="relative">
-        <img src="profile-photo.png" alt="Md Mahade Hasan Sabbir" class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 rounded-full object-cover shadow-2xl border-4 border-white dark:border-gray-700" loading="eager" decoding="async" onerror="this.src='https://via.placeholder.com/256x256/3b82f6/ffffff?text=Profile+Photo'">
+        <!-- Experience entries -->
+        <div class="space-y-12">
+          <!-- Experience Item 1 -->
+          <div class="experience-entry animate-on-scroll flex flex-row gap-6 items-start">
 
-        <div class="absolute inset-0 rounded-full bg-gradient-to-t from-black/20 to-transparent"></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== ABOUT ===================== -->
-<section id="about" class="flex flex-col justify-center items-center px-4 py-20 animate-slideUp">
-
-  <div class="max-w-6xl mx-auto w-full">
-    <h2 class="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white animate-on-scroll">About Me</h2>
-
-    <div class="flex flex-col lg:flex-row items-center gap-12 px-4 md:px-0">
-
-      <!-- Profile Image -->
-      <div class="lg:w-1/2 flex justify-center">
-        <div class="relative w-full max-w-xs sm:max-w-sm md:max-w-md">
-          <img src="about-1.jpg" alt="About Md Mahade Hasan Sabbir" class="w-full aspect-[3/5] object-cover rounded-2xl shadow-2xl" loading="lazy" decoding="async" onerror="this.src='https://via.placeholder.com/384x640/10b981/ffffff?text=About+Photo'">
-
-          <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/10 to-transparent"></div>
-        </div>
-      </div>
-
-      <!-- Description -->
-      <div class="lg:w-1/2">
-        <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed animate-on-scroll text-justify">
-
-          I am a results-driven Back-end Developer with years of professional experience in architecting and maintaining scalable web applications.
-          I specialize in building robust APIs and secure, high-performance systems using the PHP and Laravel ecosystem.
-          My focus is on creating efficient, maintainable code that drives business value and solves complex technical challenges.
-
-        </p>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <!-- Backend -->
-          <div class="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:shadow-md transition-all animate-left">
-            <div class="flex items-center gap-4 mb-4">
-              <div class="p-3 bg-blue-500/10 rounded-xl text-blue-600">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01"></path></svg>
-              </div>
-              <h3 class="font-bold text-lg">Backend Core</h3>
+            <div class="experience-point">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd">
+                </path>
+              </svg>
             </div>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg text-xs font-semibold uppercase tracking-wider">PHP</span>
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Laravel</span>
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Node.js</span>
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg text-xs font-semibold uppercase tracking-wider">RESTful APIs</span>
+            <div class="experience-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border-l-4 border-blue-500">
+              <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                <h3 class="text-xl font-bold text-gray-800 dark:text-white">Junior Back-end Developer (OTA Systems)</h3>
+                <span class="text-sm text-blue-600 dark:text-blue-400 font-medium mt-1 md:mt-0">September 2025 –
+                  Present</span>
+              </div>
+              <div class="commit-meta">Innovate Solution • OTA backend release</div>
+              <div class="commit-message">Implemented feature-rich OTA backend modules and shipped API improvements for
+                real-time booking flows.</div>
+              <div class="commit-changes mb-4">
+                <div class="commit-change">Added flight, hotel, activity, transfer, visa, and tour API endpoints for a
+                  unified travel platform.</div>
+                <div class="commit-change">Optimized MySQL schemas and queries to improve search and reservation
+                  performance.</div>
+                <div class="commit-change">Integrated payment gateway and third-party travel data services with robust
+                  error handling.</div>
+                <div class="commit-change">Refactored legacy endpoints to improve scalability and maintainability.</div>
+                <div class="commit-change fix">Fixed API response delays and reduced backend processing time for
+                  high-volume requests.</div>
+              </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">PHP</span>
+                <span
+                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Server
+                  Operations</span>
+                <span
+                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">MySQL</span>
+                <span
+                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">REST
+                  APIs</span>
+                <span
+                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">OTA
+                  Systems</span>
+              </div>
             </div>
           </div>
 
-          <!-- Database -->
-          <div class="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:shadow-md transition-all animate-right">
-            <div class="flex items-center gap-4 mb-4">
-              <div class="p-3 bg-green-500/10 rounded-xl text-green-600">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7c-2 0-3 1-3 3zm0 4h16m-16 4h16"></path></svg>
+          <!-- Experience Item 2 -->
+          <div class="experience-entry animate-on-scroll flex flex-row gap-6 items-start">
+
+            <div class="experience-point bg-gradient-to-br from-green-500 to-green-600">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd"
+                  d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                  clip-rule="evenodd"></path>
+              </svg>
+            </div>
+            <div class="experience-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border-l-4 border-green-500">
+              <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
+                <h3 class="text-xl font-bold text-gray-800 dark:text-white">Back-end Developer Intern</h3>
+                <span class="text-sm text-green-600 dark:text-green-400 font-medium mt-1 md:mt-0">March 2025 –
+                  September 2025</span>
+
               </div>
-              <h3 class="font-bold text-lg">Architecture</h3>
-            </div>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-lg text-xs font-semibold uppercase tracking-wider">MySQL</span>
-              <span class="px-3 py-1 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Database Optimization</span>
-              <span class="px-3 py-1 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Schema Design</span>
-            </div>
-
-          </div>
-
-          <!-- Tools -->
-          <div class="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:shadow-md transition-all animate-left">
-            <div class="flex items-center gap-4 mb-4">
-              <div class="p-3 bg-purple-500/10 rounded-xl text-purple-600">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z"></path></svg>
-              </div>
-              <h3 class="font-bold text-lg">Infrastructure</h3>
-            </div>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Git / GitHub</span>
-              <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Docker</span>
-              <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 rounded-lg text-xs font-semibold uppercase tracking-wider">CI/CD</span>
-              <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Postman</span>
-            </div>
-          </div>
-
-          <!-- Frontend -->
-          <div class="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:shadow-md transition-all animate-right">
-            <div class="flex items-center gap-4 mb-4">
-              <div class="p-3 bg-orange-500/10 rounded-xl text-orange-600">
-                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
-              </div>
-              <h3 class="font-bold text-lg">Ecosystem</h3>
-            </div>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-300 rounded-lg text-xs font-semibold uppercase tracking-wider">JavaScript (ES6+)</span>
-              <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Tailwind CSS</span>
-              <span class="px-3 py-1 bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Modern UI Design</span>
-            </div>
-
-          </div>
-        </div>
-
-    </div>
-  </div>
-</section>
-
-<!-- ===================== SERVICES ===================== -->
-<section id="services" class="py-20 bg-gray-50/10 dark:bg-gray-900/10">
-  <div class="max-w-5xl mx-auto px-4 md:px-0">
-
-    <h2 class="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white animate-on-scroll">What I Do</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-2 md:px-0">
-      <!-- Scalable Systems -->
-      <div class="p-8 bg-blue-500/5 dark:bg-blue-400/5 rounded-3xl border border-blue-500/10 animate-on-scroll hover:bg-blue-500/10 transition-colors">
-        <h3 class="text-blue-600 dark:text-blue-400 font-bold mb-4 text-xl">Scalable Backend</h3>
-        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Architecting high-performance server-side logic and managing large-scale data migrations with precision and reliability.</p>
-      </div>
-      
-      <!-- API Architecture -->
-      <div class="p-8 bg-purple-500/5 dark:bg-purple-400/5 rounded-3xl border border-purple-500/10 animate-on-scroll hover:bg-purple-500/10 transition-colors">
-        <h3 class="text-purple-600 dark:text-purple-400 font-bold mb-4 text-xl">API Architecture</h3>
-        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Designing secure, documented RESTful services that serve as the high-performance backbone for modern web and mobile apps.</p>
-      </div>
-      
-      <!-- Optimization -->
-      <div class="p-8 bg-green-500/5 dark:bg-green-400/5 rounded-3xl border border-green-500/10 animate-on-scroll hover:bg-green-500/10 transition-colors">
-        <h3 class="text-green-600 dark:text-green-400 font-bold mb-4 text-xl">Optimization</h3>
-        <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Tuning database queries and server response times to ensure a seamless, lag-free experience for high-traffic environments.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<!-- ===================== PROJECTS ===================== -->
-<section id="projects" class="min-h-screen flex flex-col justify-center items-center px-4 py-20 transition">
-  <div class="max-w-6xl mx-auto text-center w-full">
-    <h2 class="text-4xl font-bold mb-8 md:mb-12 text-white animate-on-scroll">My Projects</h2>
-
-    <!-- Swiper Container -->
-    <div class="swiper projectsSwiper w-full min-h-[70vh] lg:h-[80vh]">
-
-      <div class="swiper-wrapper">
-        <!-- Project 1 -->
-        <div class="swiper-slide flex items-center justify-center p-4">
-          <div class="project-card flex flex-col lg:flex-row rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
-
-            <!-- Image Side -->
-            <div class="lg:w-3/5 relative h-64 lg:h-full bg-gray-100 dark:bg-gray-800">
-              <img src="https://images.unsplash.com/photo-1500382017468-9049fee74a62?auto=format&fit=crop&q=80&w=1200" alt="Aminship Project" class="w-full h-full object-cover" decoding="async">
-
-              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent lg:hidden"></div>
-            </div>
-            <!-- Content Side -->
-            <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
-              <span class="text-blue-600 dark:text-blue-400 font-bold uppercase tracking-widest text-sm mb-4">Land Survey Tool</span>
-              <h3 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Aminship</h3>
-              <div class="space-y-6 mb-8">
-                <div>
-                  <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
-                    <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    Problem Solved
-                  </h4>
-                  <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed">Developed a professional land survey tool for accurate area calculation, helping surveyors and landowners measure complex land parcels with precision and ease.</p>
+              <div class="commit-meta">Innovate Solution • Internship sprint</div>
+              <div class="commit-message">Contributed core backend support for OTA services, helped stabilize
+                integration flows, and prepared the codebase for production use.</div>
+              <div class="commit-changes mb-4">
+                <div class="commit-change">Implemented REST API endpoints for hotel and flight data synchronization.
                 </div>
-                <div>
-                  <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
-                    <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4m-4 12l4-4m-12 0l-4-4m4-4l-4-4"></path></svg>
-                    Technologies
-                  </h4>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium">PHP</span>
-                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium">MySQL</span>
-                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium">JavaScript</span>
-                    <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium">Bootstrap CSS</span>
-                  </div>
-                </div>
+                <div class="commit-change">Enhanced backend validation and error handling for third-party service
+                  requests.</div>
+                <div class="commit-change">Supported debugging and performance tuning across existing OTA modules.</div>
+                <div class="commit-change fix">Fixed edge-case failures during booking and data refresh cycles.</div>
               </div>
-              <a href="https://github.com/MahadeHasanSabbir/Aminship" target="_blank" class="inline-flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-xl">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path></svg>
-                Project Source
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 2 -->
-        <div class="swiper-slide flex items-center justify-center p-4">
-          <div class="project-card flex flex-col lg:flex-row rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
-
-            <!-- Image Side -->
-            <div class="lg:w-3/5 relative h-64 lg:h-full bg-gray-100 dark:bg-gray-800">
-              <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1200" alt="Property Management" class="w-full h-full object-cover" decoding="async">
-
-              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent lg:hidden"></div>
-            </div>
-            <!-- Content Side -->
-            <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
-              <span class="text-green-600 dark:text-green-400 font-bold uppercase tracking-widest text-sm mb-4">Real Estate Solutions</span>
-              <h3 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Property Management</h3>
-              <div class="space-y-6 mb-8">
-                <div>
-                  <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
-                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    Problem Solved
-                  </h4>
-                  <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed">Streamlined property listings, tenant management, and rental operations. Built to simplify the complex workflow of property managers and owners.</p>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
-                    <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4m-4 12l4-4m-12 0l-4-4m4-4l-4-4"></path></svg>
-                    Technologies
-                  </h4>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">PHP</span>
-                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">MySQL</span>
-                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Bootstrap CSS</span>
-                    <span class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Ajax</span>
-                  </div>
-                </div>
+              <div class="flex flex-wrap gap-2">
+                <span
+                  class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">PHP</span>
+                <span
+                  class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">MySQL</span>
+                <span
+                  class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">REST
+                  APIs</span>
+                <span
+                  class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">Internship</span>
               </div>
-              <a href="https://github.com/MahadeHasanSabbir/property-management" target="_blank" class="inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-xl">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path></svg>
-                Project Source
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <!-- Project 3 -->
-        <div class="swiper-slide flex items-center justify-center p-4">
-          <div class="project-card flex flex-col lg:flex-row rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
-
-            <!-- Image Side -->
-            <div class="lg:w-3/5 relative h-64 lg:h-full bg-gray-100 dark:bg-gray-800">
-              <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=1200" alt="Auction App" class="w-full h-full object-cover" decoding="async">
-
-              <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent lg:hidden"></div>
-            </div>
-            <!-- Content Side -->
-            <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
-              <span class="text-purple-600 dark:text-purple-400 font-bold uppercase tracking-widest text-sm mb-4">E-Commerce Platform</span>
-              <h3 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Auction Application</h3>
-              <div class="space-y-6 mb-8">
-                <div>
-                  <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
-                    <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
-                    Problem Solved
-                  </h4>
-                  <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed">Built a full-featured bidding platform with real-time updates. Enables secure user registration, bid management, and transaction tracking.</p>
-                </div>
-                <div>
-                  <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
-                    <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 20l4-16m4 4l4 4m-4 12l4-4m-12 0l-4-4m4-4l-4-4"></path></svg>
-                    Technologies
-                  </h4>
-                  <div class="flex flex-wrap gap-2">
-                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Laravel</span>
-                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Tailwind CSS</span>
-                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">MySQL</span>
-                    <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Laravel Blead</span>
-                  </div>
-                </div>
-              </div>
-              <a href="https://github.com/MahadeHasanSabbir/Auction-app" target="_blank" class="inline-flex items-center justify-center gap-3 bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-xl">
-                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z" clip-rule="evenodd"></path></svg>
-                Project Source
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Navigation Arrows -->
-      <div class="swiper-button-next"></div>
-      <div class="swiper-button-prev"></div>
-
-      
-      <!-- Pagination -->
-      <div class="swiper-pagination !bottom-4"></div>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== EXPERIENCE ===================== -->
-<section id="experience" class="min-h-screen flex flex-col justify-center items-center px-4 py-20 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-900">
-  <div class="max-w-6xl mx-auto w-full">
-    <h2 class="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white animate-on-scroll">Experience</h2>
-
-    <div class="relative">
-      <!-- Experience entries -->
-      <div class="space-y-12">
-        <!-- Experience Item 1 -->
-        <div class="experience-entry animate-on-scroll flex flex-row gap-6 items-start">
-
-          <div class="experience-point">
-            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z" clip-rule="evenodd"></path>
-            </svg>
-          </div>
-          <div class="experience-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border-l-4 border-blue-500">
-            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-              <h3 class="text-xl font-bold text-gray-800 dark:text-white">Junior Back-end Developer (OTA Systems)</h3>
-              <span class="text-sm text-blue-600 dark:text-blue-400 font-medium mt-1 md:mt-0">September 2025 – Present</span>
-            </div>
-            <div class="commit-meta">Innovate Solution • OTA backend release</div>
-            <div class="commit-message">Implemented feature-rich OTA backend modules and shipped API improvements for real-time booking flows.</div>
-            <div class="commit-changes mb-4">
-              <div class="commit-change">Added flight, hotel, activity, transfer, visa, and tour API endpoints for a unified travel platform.</div>
-              <div class="commit-change">Optimized MySQL schemas and queries to improve search and reservation performance.</div>
-              <div class="commit-change">Integrated payment gateway and third-party travel data services with robust error handling.</div>
-              <div class="commit-change">Refactored legacy endpoints to improve scalability and maintainability.</div>
-              <div class="commit-change fix">Fixed API response delays and reduced backend processing time for high-volume requests.</div>
-            </div>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">PHP</span>
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Server Operations</span>
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">MySQL</span>
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">REST APIs</span>
-              <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">OTA Systems</span>
-            </div>
-          </div>
-        </div>
-
-        <!-- Experience Item 2 -->
-        <div class="experience-entry animate-on-scroll flex flex-row gap-6 items-start">
-
-          <div class="experience-point bg-gradient-to-br from-green-500 to-green-600">
-            <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
-              <path fill-rule="evenodd" d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path>
-            </svg>
-          </div>
-          <div class="experience-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border-l-4 border-green-500">
-            <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
-              <h3 class="text-xl font-bold text-gray-800 dark:text-white">Back-end Developer Intern</h3>
-              <span class="text-sm text-green-600 dark:text-green-400 font-medium mt-1 md:mt-0">March 2025 – September 2025</span>
-
-            </div>
-            <div class="commit-meta">Innovate Solution • Internship sprint</div>
-            <div class="commit-message">Contributed core backend support for OTA services, helped stabilize integration flows, and prepared the codebase for production use.</div>
-            <div class="commit-changes mb-4">
-              <div class="commit-change">Implemented REST API endpoints for hotel and flight data synchronization.</div>
-              <div class="commit-change">Enhanced backend validation and error handling for third-party service requests.</div>
-              <div class="commit-change">Supported debugging and performance tuning across existing OTA modules.</div>
-              <div class="commit-change fix">Fixed edge-case failures during booking and data refresh cycles.</div>
-            </div>
-            <div class="flex flex-wrap gap-2">
-              <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">PHP</span>
-              <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">MySQL</span>
-              <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">REST APIs</span>
-              <span class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">Internship</span>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ===================== RESUME ===================== -->
-<section id="resume" class="h-screen flex flex-col justify-center items-center px-4 animate-slideUp bg-white dark:bg-gray-900">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-4xl font-bold mb-6 text-gray-800 dark:text-white animate-on-scroll">Resume & CV</h2>
-    <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 animate-on-scroll">Download my resume and CV to learn more about my experience and qualifications</p>
+  <!-- ===================== RESUME ===================== -->
+  <section id="resume"
+    class="h-screen flex flex-col justify-center items-center px-4 animate-slideUp bg-white dark:bg-gray-900">
+    <div class="max-w-4xl mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-6 text-gray-800 dark:text-white animate-on-scroll">Resume & CV</h2>
+      <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 animate-on-scroll">Download my resume and CV to learn more
+        about my experience and qualifications</p>
 
-    <div class="flex flex-col sm:flex-row gap-6 justify-center animate-scale">
-      <a href="Md_Mahade_Hasan_Sabbir_CV.pdf" download
-         class="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-4 rounded-lg transition transform hover:scale-105 shadow-lg font-semibold flex items-center justify-center gap-2">
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-          <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586 14.293 5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-        </svg>
-        Download CV
-      </a>
-
-      <a href="Md_Mahade_Hasan_Sabbir_Resume.pdf" download
-         class="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 rounded-lg transition transform hover:scale-105 shadow-lg font-semibold flex items-center justify-center gap-2">
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-          <path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586 14.293 5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z" clip-rule="evenodd"></path>
-        </svg>
-        Download Resume
-      </a>
-
-      <a href="Md_Mahade_Hasan_Sabbir_CV.pdf" target="_blank"
-         class="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white px-8 py-4 rounded-lg transition transform hover:scale-105 shadow-lg font-semibold flex items-center justify-center gap-2">
-        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-          <path d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z"></path>
-          <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
-        </svg>
-        View Documents
-      </a>
-    </div>
-  </div>
-</section>
-
-<!-- ===================== CONTACT ===================== -->
-<section id="contact" class="min-h-screen flex flex-col justify-center items-center px-4 py-20 bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 dark:from-green-900 dark:via-blue-900 dark:to-purple-900">
-  <div class="max-w-4xl mx-auto text-center w-full">
-    <h2 class="text-4xl font-bold mb-6 text-gray-800 dark:text-white animate-on-scroll">Get In Touch</h2>
-    <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 animate-on-scroll">Let's discuss your next project</p>
-
-    <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" netlify class="contact-form space-y-6 w-full max-w-lg bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm p-8 rounded-2xl shadow-2xl border border-gray-200/50 dark:border-white/20 mx-auto">
-      <input type="hidden" name="form-name" value="contact" />
-      <input type="hidden" name="bot-field" />
-
-      <div class="animate-left">
-        <label for="name" class="block text-left text-gray-800 dark:text-gray-300 font-medium mb-2 text-sm">Your Name</label>
-        <input type="text" id="name" name="name" placeholder="Enter your full name" required
-               class="w-full p-4 text-base rounded-lg bg-gray-50 dark:bg-gray-700 border-2 border-transparent focus:border-blue-500 focus:outline-none transition-all duration-300 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400" />
-      </div>
-
-      <div class="animate-right">
-        <label for="email" class="block text-left text-gray-800 dark:text-gray-300 font-medium mb-2 text-sm">Your Email</label>
-        <input type="email" id="email" name="email" placeholder="Enter your email address" required
-               class="w-full p-4 text-base rounded-lg bg-gray-50 dark:bg-gray-700 border-2 border-transparent focus:border-blue-500 focus:outline-none transition-all duration-300 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400" />
-      </div>
-
-      <div class="animate-left">
-        <label for="message" class="block text-left text-gray-800 dark:text-gray-300 font-medium mb-2 text-sm">Your Message</label>
-        <textarea id="message" name="message" placeholder="Tell me about your project or just say hello!" required
-                  class="w-full p-4 text-base rounded-lg bg-gray-50 dark:bg-gray-700 border-2 border-transparent focus:border-blue-500 focus:outline-none transition-all duration-300 h-32 resize-none text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"></textarea>
-      </div>
-
-      <div class="animate-scale pt-2">
-        <button type="submit" class="w-full bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 hover:from-blue-600 hover:via-purple-600 hover:to-green-600 text-white py-4 px-6 text-base rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg font-semibold flex items-center justify-center gap-2">
+      <div class="flex flex-col sm:flex-row gap-6 justify-center animate-scale">
+        <a href="Md_Mahade_Hasan_Sabbir_CV.pdf" download
+          class="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-4 rounded-lg transition transform hover:scale-105 shadow-lg font-semibold flex items-center justify-center gap-2">
           <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+            <path fill-rule="evenodd"
+              d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586 14.293 5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
           </svg>
-          Send Message
-        </button>
+          Download CV
+        </a>
+
+        <a href="Md_Mahade_Hasan_Sabbir_Resume.pdf" download
+          class="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 rounded-lg transition transform hover:scale-105 shadow-lg font-semibold flex items-center justify-center gap-2">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+              d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586 14.293 5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+              clip-rule="evenodd"></path>
+          </svg>
+          Download Resume
+        </a>
+
+        <a href="Md_Mahade_Hasan_Sabbir_CV.pdf" target="_blank"
+          class="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white px-8 py-4 rounded-lg transition transform hover:scale-105 shadow-lg font-semibold flex items-center justify-center gap-2">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+            <path
+              d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
+            </path>
+            <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
+          </svg>
+          View Documents
+        </a>
       </div>
-    </form>
-  </div>
-</section>
-
-<!-- ===================== FOOTER ===================== -->
-<footer class="py-12 border-t border-gray-200 dark:border-white/10 transition-colors duration-400">
-  <div class="max-w-6xl mx-auto px-4 text-center">
-    <div class="flex justify-center gap-6 mb-8">
-      <a href="https://github.com/MahadeHasanSabbir" target="_blank" class="text-gray-400 hover:text-blue-600 transition-colors">
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-      </a>
-      <a href="https://www.linkedin.com/in/mahadehasansabbir" target="_blank" class="text-gray-400 hover:text-blue-600 transition-colors">
-        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-      </a>
     </div>
-    <p class="text-gray-500 dark:text-gray-400 text-sm">
-      &copy; 2026 Md Mahade Hasan Sabbir. All rights reserved.
-    </p>
-  </div>
-</footer>
+  </section>
+
+  <!-- ===================== CONTACT ===================== -->
+  <section id="contact"
+    class="min-h-screen flex flex-col justify-center items-center px-4 py-20 bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 dark:from-green-900 dark:via-blue-900 dark:to-purple-900">
+    <div class="max-w-4xl mx-auto text-center w-full">
+      <h2 class="text-4xl font-bold mb-6 text-gray-800 dark:text-white animate-on-scroll">Get In Touch</h2>
+      <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 animate-on-scroll">Let's discuss your next project</p>
+
+      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" netlify
+        class="contact-form space-y-6 w-full max-w-lg bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm p-8 rounded-2xl shadow-2xl border border-gray-200/50 dark:border-white/20 mx-auto">
+        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="bot-field" />
+
+        <div class="animate-left">
+          <label for="name" class="block text-left text-gray-800 dark:text-gray-300 font-medium mb-2 text-sm">Your
+            Name</label>
+          <input type="text" id="name" name="name" placeholder="Enter your full name" required
+            class="w-full p-4 text-base rounded-lg bg-gray-50 dark:bg-gray-700 border-2 border-transparent focus:border-blue-500 focus:outline-none transition-all duration-300 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400" />
+        </div>
+
+        <div class="animate-right">
+          <label for="email" class="block text-left text-gray-800 dark:text-gray-300 font-medium mb-2 text-sm">Your
+            Email</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email address" required
+            class="w-full p-4 text-base rounded-lg bg-gray-50 dark:bg-gray-700 border-2 border-transparent focus:border-blue-500 focus:outline-none transition-all duration-300 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400" />
+        </div>
+
+        <div class="animate-left">
+          <label for="message" class="block text-left text-gray-800 dark:text-gray-300 font-medium mb-2 text-sm">Your
+            Message</label>
+          <textarea id="message" name="message" placeholder="Tell me about your project or just say hello!" required
+            class="w-full p-4 text-base rounded-lg bg-gray-50 dark:bg-gray-700 border-2 border-transparent focus:border-blue-500 focus:outline-none transition-all duration-300 h-32 resize-none text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400"></textarea>
+        </div>
+
+        <div class="animate-scale pt-2">
+          <button type="submit"
+            class="w-full bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 hover:from-blue-600 hover:via-purple-600 hover:to-green-600 text-white py-4 px-6 text-base rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg font-semibold flex items-center justify-center gap-2">
+            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+            </svg>
+            Send Message
+          </button>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="py-12 border-t border-gray-200 dark:border-white/10 transition-colors duration-400">
+    <div class="max-w-6xl mx-auto px-4 text-center">
+      <div class="flex justify-center gap-6 mb-8">
+        <a href="https://github.com/MahadeHasanSabbir" target="_blank"
+          class="text-gray-400 hover:text-blue-600 transition-colors">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+        <a href="https://linkedin.com/in/mahadehasansabbir " target="_blank" class="text-gray-400 hover:text-blue-600 transition-colors">
+          <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+          </svg>
+        </a>
+      </div>
+      <p class="text-gray-500 dark:text-gray-400 text-sm">
+        &copy; 2026 Md Mahade Hasan Sabbir. All rights reserved.
+      </p>
+    </div>
+  </footer>
 
 
 
 
-<!-- Scripts -->
-<script src="tailwind.min.js"></script>
-<script>
-  window.tailwind.config = {
-    darkMode: 'class'
-  }
-</script>
-<script src="swiper-bundle.min.js" defer></script>
-<script src="script.js" defer></script>
+  <!-- Scripts -->
+  <script src="tailwind.min.js"></script>
+  <script>
+    window.tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  <script src="swiper-bundle.min.js" defer></script>
+  <script src="script.js" defer></script>
 </body>
 
 </html>
