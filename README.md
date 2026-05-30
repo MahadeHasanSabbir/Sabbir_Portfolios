@@ -22,17 +22,6 @@ A modern, responsive portfolio website built with HTML, CSS, and JavaScript feat
 - Netlify Forms
 - Intersection Observer API
 
-## Required Images
-
-To complete the professional look, add the following images to your root directory:
-
-1. **profile-photo.jpg** - Your profile photo for the hero section (recommended: 400x400px, square format)
-2. **hero-bg.jpg** - Background image for hero section (recommended: high resolution landscape)
-3. **about-photo.jpg** - Photo for about section (recommended: 400x400px or similar)
-4. **aminship-project.jpg** - Screenshot/image for Aminship project
-5. **property-management-project.jpg** - Screenshot/image for Property Management project
-6. **auction-app-project.jpg** - Screenshot/image for Auction Application project
-7. **Md_Mahade_Hasan_Sabbir_Resume.pdf** - Your resume PDF file
 
 ## No Build Process Required
 
@@ -56,18 +45,18 @@ This is a **static website** that requires **no build process**. No Node.js, npm
 
 ```
 portfolio/
-├── index.html                      # Main HTML file
-├── style.css                       # Custom styles and animations
-├── script.js                       # JavaScript functionality
-├── netlify.toml                    # Netlify configuration
-├── _redirects                      # SPA routing for Netlify
-├── profile-photo.jpg              # Your profile photo
-├── hero-bg.jpg                    # Hero background image
-├── about-photo.jpg                # About section photo
-├── *-project.jpg                  # Project screenshots
-├── Md_Mahade_Hasan_Sabbir_CV.pdf  # Your CV
+├── index.html                        # Main HTML file
+├── style.css                         # Custom styles and animations
+├── script.js                         # JavaScript functionality
+├── netlify.toml                      # Netlify configuration
+├── _redirects                        # SPA routing for Netlify
+├── profile-photo.jpg                 # Your profile photo
+├── hero-bg.jpg                       # Hero background image
+├── about-photo.jpg                   # About section photo
+├── *-project.jpg                     # Project screenshots
+├── Md_Mahade_Hasan_Sabbir_CV.pdf     # Your CV
 ├── Md_Mahade_Hasan_Sabbir_Resume.pdf # Your Resume
-└── README.md                       # This file
+└── README.md                         # This file
 ```
 
 ## Browser Support
