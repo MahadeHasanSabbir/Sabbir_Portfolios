@@ -19,6 +19,15 @@
   <!-- Critical Styles -->
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="swiper-bundle.min.css" />
+
+  <!-- Apply saved theme before the page paints (prevents flash) -->
+  <script>
+    (function () {
+      var theme = localStorage.getItem('theme');
+      if (theme === 'light') document.documentElement.classList.remove('dark');
+      else document.documentElement.classList.add('dark');
+    })();
+  </script>
 </head>
 
 <body class="transition-colors duration-300">
@@ -26,14 +35,13 @@
 
   <!-- ===================== NAVBAR ===================== -->
   <nav
-    class="fixed w-full bg-slate-900/80 backdrop-blur-md shadow-xl z-50 transition-all duration-300 border-b border-white/5">
-
+    class="fixed w-full bg-white/85 dark:bg-slate-900/85 backdrop-blur-md shadow-lg z-50 transition-all duration-300 border-b border-gray-200/60 dark:border-white/5">
 
     <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">Sabbir
-      </h1>
+      <a href="#hero" class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">Sabbir</a>
 
-      <div class="flex items-center gap-8">
+      <div class="flex items-center gap-4">
+        <!-- Desktop links -->
         <div class="space-x-8 hidden md:flex">
           <a href="#about"
             class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition font-medium">About</a>
@@ -41,7 +49,6 @@
             class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition font-medium">Services</a>
           <a href="#projects"
             class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition font-medium">Projects</a>
-
           <a href="#experience"
             class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition font-medium">Experience</a>
           <a href="#resume"
@@ -50,7 +57,43 @@
             class="text-gray-700 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 transition font-medium">Contact</a>
         </div>
 
+        <!-- Theme toggle -->
+        <button id="theme-toggle" type="button" aria-label="Switch theme"
+          class="p-2 rounded-lg text-gray-600 dark:text-gray-300 hover:bg-gray-200/60 dark:hover:bg-white/10 transition">
+          <!-- sun icon (shown in dark mode) -->
+          <svg id="theme-icon-sun" class="w-5 h-5 hidden dark:block" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd"
+              d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.95l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.12-10.607a1 1 0 010 1.414l-.706.707a1 1 0 11-1.414-1.414l.707-.707a1 1 0 011.414 0zM17 11a1 1 0 100-2h-1a1 1 0 100 2h1zm-7 4a1 1 0 011 1v1a1 1 0 11-2 0v-1a1 1 0 011-1zM5.05 6.464A1 1 0 106.465 5.05l-.708-.707a1 1 0 00-1.414 1.414l.707.707zm1.414 8.486l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 1.414zM4 11a1 1 0 100-2H3a1 1 0 000 2h1z"
+              clip-rule="evenodd"></path>
+          </svg>
+          <!-- moon icon (shown in light mode) -->
+          <svg id="theme-icon-moon" class="w-5 h-5 block dark:hidden" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+          </svg>
+        </button>
 
+        <!-- Mobile menu button -->
+        <button id="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false"
+          class="p-2 rounded-lg md:hidden text-gray-700 dark:text-gray-300 hover:bg-gray-200/60 dark:hover:bg-white/10 transition">
+          <svg id="menu-icon-open" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu panel -->
+    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200/60 dark:border-white/10 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md">
+      <div class="px-4 py-3 flex flex-col gap-1">
+        <a href="#about" class="mobile-link block py-3 px-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition">About</a>
+        <a href="#services" class="mobile-link block py-3 px-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition">Services</a>
+        <a href="#projects" class="mobile-link block py-3 px-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition">Projects</a>
+        <a href="#experience" class="mobile-link block py-3 px-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition">Experience</a>
+        <a href="#resume" class="mobile-link block py-3 px-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition">Resume</a>
+        <a href="#contact" class="mobile-link block py-3 px-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition">Contact</a>
       </div>
     </div>
   </nav>
@@ -72,7 +115,7 @@
       <!-- Text Content -->
       <div class="md:w-3/4 flex flex-col items-center md:items-start text-center md:text-left order-2 md:order-1">
         <h1
-          class="text-lg sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-green-400 bg-clip-text text-transparent leading-tight animate-on-scroll whitespace-nowrap">
+          class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-green-400 bg-clip-text text-transparent leading-tight animate-on-scroll">
           Md Mahade Hasan Sabbir
         </h1>
 
@@ -254,6 +297,7 @@
 
         </div>
       </div>
+    </div>
   </section>
 
   <!-- ===================== SERVICES ===================== -->
@@ -293,7 +337,7 @@
   <!-- ===================== PROJECTS ===================== -->
   <section id="projects" class="min-h-screen flex flex-col justify-center items-center px-4 py-20 transition">
     <div class="max-w-6xl mx-auto text-center w-full">
-      <h2 class="text-4xl font-bold mb-8 md:mb-12 text-white animate-on-scroll">My Projects</h2>
+      <h2 class="text-4xl font-bold mb-8 md:mb-12 text-gray-800 dark:text-white animate-on-scroll">My Projects</h2>
 
       <!-- Swiper Container -->
       <div class="swiper projectsSwiper w-full h-auto lg:h-[80vh]">
@@ -474,7 +518,7 @@
                         CSS</span>
                       <span
                         class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">MySQL</span>
-                      <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Laravel Blead</span>
+                      <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Laravel Blade</span>
                     </div>
                   </div>
                 </div>
@@ -607,7 +651,7 @@
 
   <!-- ===================== RESUME ===================== -->
   <section id="resume"
-    class="h-screen flex flex-col justify-center items-center px-4 animate-slideUp bg-white dark:bg-gray-900">
+    class="min-h-screen flex flex-col justify-center items-center px-4 py-20 animate-slideUp bg-white dark:bg-gray-900">
     <div class="max-w-4xl mx-auto text-center">
       <h2 class="text-4xl font-bold mb-6 text-gray-800 dark:text-white animate-on-scroll">Resume & CV</h2>
       <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 animate-on-scroll">Download my resume and CV to learn more
@@ -655,10 +699,10 @@
       <h2 class="text-4xl font-bold mb-6 text-gray-800 dark:text-white animate-on-scroll">Get In Touch</h2>
       <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 animate-on-scroll">Let's discuss your next project</p>
 
-      <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" netlify
+      <form name="contact" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field"
         class="contact-form space-y-6 w-full max-w-lg bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm p-8 rounded-2xl shadow-2xl border border-gray-200/50 dark:border-white/20 mx-auto">
         <input type="hidden" name="form-name" value="contact" />
-        <input type="hidden" name="bot-field" />
+        <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
 
         <div class="animate-left">
           <label for="name" class="block text-left text-gray-800 dark:text-gray-300 font-medium mb-2 text-sm">Your
@@ -690,6 +734,7 @@
             </svg>
             Send Message
           </button>
+          <p id="form-status" class="hidden mt-4 text-sm font-medium rounded-lg p-3" role="status"></p>
         </div>
       </form>
     </div>
