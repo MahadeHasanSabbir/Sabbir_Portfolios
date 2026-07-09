@@ -5,20 +5,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Md Mahade Hasan Sabbir | Portfolio</title>
+  <title>Md Mahade Hasan Sabbir — Back-end Developer (PHP / Laravel)</title>
+
+  <!-- Primary SEO -->
+  <meta name="description"
+    content="Md Mahade Hasan Sabbir — back-end developer specialising in scalable PHP & Laravel APIs, MySQL optimisation, and high-performance systems. View projects, experience, and resume." />
+  <meta name="author" content="Md Mahade Hasan Sabbir" />
+  <meta name="keywords"
+    content="Md Mahade Hasan Sabbir, Back-end Developer, PHP Developer, Laravel Developer, API Development, MySQL, Bangladesh" />
+  <meta name="theme-color" content="#0f172a" media="(prefers-color-scheme: dark)" />
+  <meta name="theme-color" content="#f8fafc" media="(prefers-color-scheme: light)" />
+  <link rel="canonical" href="https://mahadehasansabbir.netlify.app/" />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="apple-touch-icon" href="profile-photo.png" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Md Mahade Hasan Sabbir — Back-end Developer (PHP / Laravel)" />
+  <meta property="og:description"
+    content="Back-end developer specialising in scalable PHP & Laravel APIs, MySQL optimisation, and high-performance systems." />
+  <meta property="og:url" content="https://mahadehasansabbir.netlify.app/" />
+  <meta property="og:image" content="https://mahadehasansabbir.netlify.app/profile-photo.png" />
+  <meta property="og:site_name" content="Md Mahade Hasan Sabbir" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Md Mahade Hasan Sabbir — Back-end Developer (PHP / Laravel)" />
+  <meta name="twitter:description"
+    content="Back-end developer specialising in scalable PHP & Laravel APIs, MySQL optimisation, and high-performance systems." />
+  <meta name="twitter:image" content="https://mahadehasansabbir.netlify.app/profile-photo.png" />
+
+  <!-- Structured data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Md Mahade Hasan Sabbir",
+    "jobTitle": "Back-end Developer",
+    "url": "https://mahadehasansabbir.netlify.app/",
+    "sameAs": [
+      "https://github.com/MahadeHasanSabbir",
+      "https://linkedin.com/in/mahadehasansabbir"
+    ],
+    "knowsAbout": ["PHP", "Laravel", "MySQL", "REST APIs", "Node.js", "Database Optimization", "Webhooks", "Payment Gateway Integration"],
+    "worksFor": { "@type": "Organization", "name": "Innovate Solution" }
+  }
+  </script>
 
   <!-- Preconnect to external domains -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
   <!-- Preload Critical Assets -->
-  <!-- <link rel="preload" href="hero-bg-1.jpg" as="image"> -->
   <link rel="preload" href="profile-photo.png" as="image">
 
-  <!-- Critical Styles -->
-  <link rel="stylesheet" href="style.css" />
+  <!-- Precompiled Tailwind utilities (static, no runtime JIT) -->
+  <link rel="stylesheet" href="tailwind.built.css?v=5" />
+  <!-- Swiper first so our custom overrides in style.css win -->
   <link rel="stylesheet" href="swiper-bundle.min.css" />
+  <!-- Critical Styles -->
+  <link rel="stylesheet" href="style.css?v=5" />
 
   <!-- Apply saved theme before the page paints (prevents flash) -->
   <script>
@@ -100,61 +150,108 @@
 
   <!-- ===================== HERO ===================== -->
   <section id="hero"
-    class="min-h-screen flex flex-col justify-center items-center text-center px-4 animate-fadeIn relative overflow-hidden py-16 md:py-20">
-    <!-- Background Image -->
-    <!-- <div class="absolute inset-0 bg-gradient-to-br from-slate-50 to-blue-100 dark:from-slate-900 dark:to-slate-800">
-      <img src="hero-bg-1.jpg" alt="Background" class="w-full h-full object-cover opacity-10" loading="eager"
-        fetchpriority="high" decoding="async" onerror="this.style.display='none'">
+    class="hero-grid min-h-screen flex flex-col justify-center items-center text-center px-4 animate-fadeIn relative overflow-hidden py-16 md:py-20">
 
-    </div> -->
-
-
+    <!-- Ambient glow accents -->
+    <div class="hero-glow hero-glow--blue" aria-hidden="true"></div>
+    <div class="hero-glow hero-glow--green" aria-hidden="true"></div>
 
     <div
-      class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-6 md:gap-8 lg:gap-12 px-4">
+      class="relative z-10 max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-center gap-8 md:gap-10 lg:gap-16 px-4">
       <!-- Text Content -->
-      <div class="md:w-3/4 flex flex-col items-center md:items-start text-center md:text-left order-2 md:order-1">
+      <div class="md:w-3/5 flex flex-col items-center md:items-start text-center md:text-left order-2 md:order-1">
+
+        <!-- Availability badge -->
+        <div
+          class="inline-flex items-center gap-2 mb-3 px-4 py-1.5 rounded-full text-xs font-mono font-medium bg-green-500/10 text-green-600 dark:text-green-400 border border-green-500/20 animate-on-scroll">
+          <span class="status-dot" aria-hidden="true"></span>
+          Available for backend roles &amp; freelance
+        </div>
+
+        <!-- Live local time (Dhaka) -->
+        <div
+          class="flex items-center justify-center md:justify-start gap-1.5 mb-6 text-xs font-mono text-gray-500 dark:text-gray-400 animate-on-scroll">
+          <svg class="w-3.5 h-3.5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          My time · Dhaka
+          <span class="js-dhaka-time font-semibold text-gray-700 dark:text-gray-200 tabular-nums">--:--:--</span>
+          <span class="text-gray-400 dark:text-gray-500">GMT+6</span>
+        </div>
+
         <h1
           class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-green-400 bg-clip-text text-transparent leading-tight animate-on-scroll">
           Md Mahade Hasan Sabbir
         </h1>
 
-
-
         <div
-          class="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6 md:mb-8 animate-on-scroll min-h-[1.6em] flex items-center justify-center md:justify-start">
+          class="text-lg sm:text-xl md:text-2xl text-gray-600 dark:text-gray-300 mb-6 md:mb-8 animate-on-scroll min-h-[1.6em] flex items-center justify-center md:justify-start font-mono">
+          <span class="text-blue-500 dark:text-blue-400 mr-2 select-none">&gt;</span>
           <span id="typed-text"></span>
+          <span class="type-cursor" aria-hidden="true"></span>
         </div>
 
         <p
-          class="text-base sm:text-lg text-gray-500 dark:text-gray-400 mb-6 md:mb-8 max-w-2xl animate-on-scroll px-4 md:px-0">
-          Passionate about creating scalable web applications and robust APIs with modern technologies
+          class="text-base sm:text-lg text-gray-500 dark:text-gray-400 mb-8 max-w-2xl animate-on-scroll px-4 md:px-0">
+          I build scalable web applications and robust, secure APIs with the
+          <span class="font-semibold text-gray-700 dark:text-gray-200">PHP &amp; Laravel</span> ecosystem —
+          turning complex requirements into efficient, maintainable systems.
         </p>
+
         <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start w-full animate-on-scroll">
           <a href="#projects"
-            class="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition transform hover:scale-105 shadow-lg text-sm sm:text-base">
+            class="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition transform hover:scale-105 shadow-lg shadow-blue-500/25 text-sm sm:text-base font-medium">
             View My Work
           </a>
           <a href="#contact"
-            class="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition transform hover:scale-105 text-sm sm:text-base">
+            class="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition transform hover:scale-105 text-sm sm:text-base font-medium">
             Get In Touch
+          </a>
+        </div>
+
+        <!-- Social links -->
+        <div class="flex items-center gap-5 mt-8 animate-on-scroll">
+          <a href="https://github.com/MahadeHasanSabbir" target="_blank" rel="noopener" aria-label="GitHub profile"
+            class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors hover:-translate-y-0.5 transform">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+            </svg>
+          </a>
+          <a href="https://linkedin.com/in/mahadehasansabbir" target="_blank" rel="noopener" aria-label="LinkedIn profile"
+            class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors hover:-translate-y-0.5 transform">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+            </svg>
+          </a>
+          <a href="mailto:mahadehasanbd00@gmail.com" aria-label="Send an email"
+            class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors hover:-translate-y-0.5 transform">
+            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+              <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+              <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+            </svg>
           </a>
         </div>
       </div>
 
       <!-- Profile Photo -->
-      <div class="md:w-1/4 flex justify-center order-1 md:order-2 flex-shrink-0">
-
-        <div class="relative">
-          <img src="profile-photo.png" alt="Md Mahade Hasan Sabbir"
-            class="w-32 h-32 sm:w-40 sm:h-40 md:w-48 md:h-48 lg:w-56 lg:h-56 xl:w-64 xl:h-64 rounded-full object-cover shadow-2xl border-4 border-white dark:border-gray-700"
-            loading="eager" decoding="async"
+      <div class="md:w-2/5 flex justify-center order-1 md:order-2 flex-shrink-0">
+        <div class="profile-ring relative">
+          <img src="profile-photo.png" alt="Portrait of Md Mahade Hasan Sabbir"
+            class="relative z-10 w-36 h-36 sm:w-44 sm:h-44 md:w-52 md:h-52 lg:w-60 lg:h-60 xl:w-64 xl:h-64 rounded-full object-cover shadow-2xl border-4 border-white dark:border-slate-800"
+            loading="eager" decoding="async" fetchpriority="high"
             onerror="this.src='https://via.placeholder.com/256x256/3b82f6/ffffff?text=Profile+Photo'">
-
-          <div class="absolute inset-0 rounded-full bg-gradient-to-t from-black/20 to-transparent"></div>
         </div>
       </div>
     </div>
+
+    <!-- Scroll cue -->
+    <a href="#about" aria-label="Scroll to about section"
+      class="scroll-cue hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-gray-400 dark:text-gray-500 hover:text-blue-500 transition-colors">
+      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      </svg>
+    </a>
   </section>
 
   <!-- ===================== ABOUT ===================== -->
@@ -213,6 +310,11 @@
                 <span
                   class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg text-xs font-semibold uppercase tracking-wider">RESTful
                   APIs</span>
+                <span
+                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Webhooks</span>
+                <span
+                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Payment
+                  Gateways</span>
               </div>
             </div>
 
@@ -304,7 +406,30 @@
   <section id="services" class="py-20 bg-gray-50/10 dark:bg-gray-900/10">
     <div class="max-w-5xl mx-auto px-4 md:px-0">
 
-      <h2 class="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white animate-on-scroll">What I Do</h2>
+      <!-- Proof / stats strip -->
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16 px-2 md:px-0">
+        <div class="stat-card animate-on-scroll">
+          <div class="stat-num">2+</div>
+          <div class="stat-label">Years building backends</div>
+        </div>
+        <div class="stat-card animate-on-scroll">
+          <div class="stat-num">6</div>
+          <div class="stat-label">Projects shipped</div>
+        </div>
+        <div class="stat-card animate-on-scroll">
+          <div class="stat-num">6</div>
+          <div class="stat-label">API domains delivered</div>
+        </div>
+        <div class="stat-card animate-on-scroll">
+          <div class="stat-num">REST</div>
+          <div class="stat-label">API-first mindset</div>
+        </div>
+      </div>
+
+      <h2 class="text-4xl font-bold mb-4 text-center text-gray-800 dark:text-white animate-on-scroll">What I Do</h2>
+      <p class="text-center text-gray-500 dark:text-gray-400 mb-12 max-w-2xl mx-auto animate-on-scroll">
+        Backend engineering focused on the parts users never see but always feel — speed, reliability, and clean data.
+      </p>
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-2 md:px-0">
         <!-- Scalable Systems -->
         <div
@@ -348,12 +473,24 @@
             <div
               class="project-card flex flex-col lg:flex-row rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
 
-              <!-- Image Side -->
-              <div class="lg:w-3/5 relative h-64 lg:h-full bg-gray-100 dark:bg-gray-800">
-                <img src="https://images.unsplash.com/photo-1500382017468-9049fee74a62?auto=format&fit=crop&q=80&w=1200"
-                  alt="Aminship Project" class="w-full h-full object-cover" decoding="async" loading="lazy">
-
-                <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent lg:hidden"></div>
+              <!-- Visual Side -->
+              <div class="lg:w-3/5 relative h-64 lg:h-full proj-visual proj-visual--blue">
+                <div class="proj-window">
+                  <div class="proj-window__bar">
+                    <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+                    <span class="proj-window__title">aminship / AreaCalculator.php</span>
+                  </div>
+                  <pre class="proj-window__code"><code><span class="c-key">public function</span> <span class="c-fn">calculate</span>(<span class="c-var">$corners</span>) {
+  <span class="c-var">$area</span> = <span class="c-num">0</span>;
+  <span class="c-key">foreach</span> (<span class="c-var">$corners</span> <span class="c-key">as</span> <span class="c-var">$i</span> => <span class="c-var">$p</span>) {
+    <span class="c-var">$next</span> = <span class="c-var">$corners</span>[(<span class="c-var">$i</span>+<span class="c-num">1</span>) % <span class="c-fn">count</span>(<span class="c-var">$corners</span>)];
+    <span class="c-var">$area</span> += <span class="c-var">$p</span>->x * <span class="c-var">$next</span>->y
+           - <span class="c-var">$next</span>->x * <span class="c-var">$p</span>->y;
+  }
+  <span class="c-key">return</span> <span class="c-fn">abs</span>(<span class="c-var">$area</span>) / <span class="c-num">2</span>; <span class="c-cmt">// shoelace</span>
+}</code></pre>
+                </div>
+                <span class="proj-tag">Land Survey · PHP</span>
               </div>
               <!-- Content Side -->
               <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
@@ -412,12 +549,23 @@
             <div
               class="project-card flex flex-col lg:flex-row rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
 
-              <!-- Image Side -->
-              <div class="lg:w-3/5 relative h-64 lg:h-full bg-gray-100 dark:bg-gray-800">
-                <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1200"
-                  alt="Property Management" class="w-full h-full object-cover" decoding="async" loading="lazy">
+              <!-- Visual Side -->
+              <div class="lg:w-3/5 relative h-64 lg:h-full proj-visual proj-visual--green">
+                <div class="proj-window">
+                  <div class="proj-window__bar">
+                    <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+                    <span class="proj-window__title">property-mgmt / routes/api.php</span>
+                  </div>
+                  <pre class="proj-window__code"><code><span class="c-var">Route</span>::<span class="c-fn">apiResource</span>(<span class="c-str">'properties'</span>, <span class="c-var">PropertyController</span>::<span class="c-key">class</span>);
+<span class="c-var">Route</span>::<span class="c-fn">apiResource</span>(<span class="c-str">'tenants'</span>, <span class="c-var">TenantController</span>::<span class="c-key">class</span>);
 
-                <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent lg:hidden"></div>
+<span class="c-var">Route</span>::<span class="c-fn">post</span>(<span class="c-str">'leases/{id}/renew'</span>, [
+  <span class="c-var">LeaseController</span>::<span class="c-key">class</span>, <span class="c-str">'renew'</span>
+])-><span class="c-fn">middleware</span>(<span class="c-str">'auth:sanctum'</span>);
+
+<span class="c-cmt">// 200 OK · avg response 84ms</span></code></pre>
+                </div>
+                <span class="proj-tag">Real Estate · MySQL</span>
               </div>
               <!-- Content Side -->
               <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
@@ -476,12 +624,24 @@
             <div
               class="project-card flex flex-col lg:flex-row rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
 
-              <!-- Image Side -->
-              <div class="lg:w-3/5 relative h-64 lg:h-full bg-gray-100 dark:bg-gray-800">
-                <img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&q=80&w=1200"
-                  alt="Auction App" class="w-full h-full object-cover" decoding="async" loading="lazy">
+              <!-- Visual Side -->
+              <div class="lg:w-3/5 relative h-64 lg:h-full proj-visual proj-visual--purple">
+                <div class="proj-window">
+                  <div class="proj-window__bar">
+                    <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+                    <span class="proj-window__title">auction / PlaceBid.php</span>
+                  </div>
+                  <pre class="proj-window__code"><code><span class="c-key">public function</span> <span class="c-fn">placeBid</span>(<span class="c-var">Auction</span> <span class="c-var">$auction</span>, <span class="c-var">$amount</span>) {
+  <span class="c-var">DB</span>::<span class="c-fn">transaction</span>(<span class="c-key">function</span> () <span class="c-key">use</span> (...) {
+    <span class="c-key">if</span> (<span class="c-var">$amount</span> &lt;= <span class="c-var">$auction</span>->highest_bid)
+      <span class="c-key">throw new</span> <span class="c-var">BidTooLowException</span>;
 
-                <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent lg:hidden"></div>
+    <span class="c-var">$auction</span>-><span class="c-fn">bids</span>()-><span class="c-fn">create</span>([...]);
+    <span class="c-fn">broadcast</span>(<span class="c-key">new</span> <span class="c-var">BidPlaced</span>(<span class="c-var">$auction</span>));
+  });
+}</code></pre>
+                </div>
+                <span class="proj-tag">Real-time · Laravel</span>
               </div>
               <!-- Content Side -->
               <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
@@ -524,6 +684,243 @@
                 </div>
                 <a href="https://github.com/MahadeHasanSabbir/Auction-app" target="_blank"
                   class="inline-flex items-center justify-center gap-3 bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-xl">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  Project Source
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 4 -->
+          <div class="swiper-slide flex items-center justify-center p-4">
+            <div
+              class="project-card flex flex-col lg:flex-row rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
+
+              <!-- Visual Side -->
+              <div class="lg:w-3/5 relative h-64 lg:h-full proj-visual proj-visual--amber">
+                <div class="proj-window">
+                  <div class="proj-window__bar">
+                    <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+                    <span class="proj-window__title">inventory / StockController.php</span>
+                  </div>
+                  <pre class="proj-window__code"><code><span class="c-key">public function</span> <span class="c-fn">checkout</span>(<span class="c-var">Order</span> <span class="c-var">$order</span>) {
+  <span class="c-key">foreach</span> (<span class="c-var">$order</span>->items <span class="c-key">as</span> <span class="c-var">$item</span>) {
+    <span class="c-var">$product</span> = <span class="c-var">$item</span>->product;
+    <span class="c-key">if</span> (<span class="c-var">$product</span>->stock &lt; <span class="c-var">$item</span>->qty)
+      <span class="c-key">throw new</span> <span class="c-var">OutOfStockException</span>(<span class="c-var">$product</span>);
+
+    <span class="c-var">$product</span>-><span class="c-fn">decrement</span>(<span class="c-str">'stock'</span>, <span class="c-var">$item</span>->qty);
+  }
+  <span class="c-var">LowStockAlert</span>::<span class="c-fn">dispatchIf</span>(<span class="c-var">$product</span>->stock &lt; <span class="c-num">10</span>);
+}</code></pre>
+                </div>
+                <span class="proj-tag">Laravel · MySQL</span>
+              </div>
+              <!-- Content Side -->
+              <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
+                <span class="text-amber-600 dark:text-amber-400 font-bold uppercase tracking-widest text-sm mb-4">Inventory
+                  System</span>
+                <h3 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Inventory Management</h3>
+                <div class="space-y-6 mb-8">
+                  <div>
+                    <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
+                      <svg class="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                      Problem Solved
+                    </h4>
+                    <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed">A Laravel-based system to track
+                      products, suppliers, and stock movement in real time — with purchase/sales records and automatic
+                      low-stock alerts to prevent shortages.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
+                      <svg class="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 20l4-16m4 4l4 4m-4 12l4-4m-12 0l-4-4m4-4l-4-4"></path>
+                      </svg>
+                      Technologies
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                      <span
+                        class="px-3 py-1 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 rounded-full text-xs font-medium">Laravel</span>
+                      <span
+                        class="px-3 py-1 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 rounded-full text-xs font-medium">Blade</span>
+                      <span
+                        class="px-3 py-1 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 rounded-full text-xs font-medium">MySQL</span>
+                      <span
+                        class="px-3 py-1 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 rounded-full text-xs font-medium">JavaScript</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="https://github.com/MahadeHasanSabbir/inventory-management" target="_blank" rel="noopener"
+                  class="inline-flex items-center justify-center gap-3 bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-xl">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  Project Source
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 5 -->
+          <div class="swiper-slide flex items-center justify-center p-4">
+            <div
+              class="project-card flex flex-col lg:flex-row rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
+
+              <!-- Visual Side -->
+              <div class="lg:w-3/5 relative h-64 lg:h-full proj-visual proj-visual--rose">
+                <div class="proj-window">
+                  <div class="proj-window__bar">
+                    <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+                    <span class="proj-window__title">blood-donation / donors.php</span>
+                  </div>
+                  <pre class="proj-window__code"><code><span class="c-var">$stmt</span> = <span class="c-var">$pdo</span>-><span class="c-fn">prepare</span>(
+  <span class="c-str">"SELECT name, phone, district
+   FROM donors
+   WHERE blood_group = :bg
+     AND available = 1
+   ORDER BY last_donation ASC"</span>
+);
+<span class="c-var">$stmt</span>-><span class="c-fn">execute</span>([<span class="c-str">'bg'</span> => <span class="c-var">$group</span>]);
+<span class="c-var">$matches</span> = <span class="c-var">$stmt</span>-><span class="c-fn">fetchAll</span>(); <span class="c-cmt">// eligible donors</span></code></pre>
+                </div>
+                <span class="proj-tag">PHP · Live</span>
+              </div>
+              <!-- Content Side -->
+              <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
+                <span class="text-rose-600 dark:text-rose-400 font-bold uppercase tracking-widest text-sm mb-4">Healthcare
+                  Platform</span>
+                <h3 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Blood Donation System</h3>
+                <div class="space-y-6 mb-8">
+                  <div>
+                    <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
+                      <svg class="w-5 h-5 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                      Problem Solved
+                    </h4>
+                    <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed">Connects donors with those in
+                      need — a searchable registry filtered by blood group and location, with donor availability and
+                      request management to speed up urgent matches.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
+                      <svg class="w-5 h-5 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 20l4-16m4 4l4 4m-4 12l4-4m-12 0l-4-4m4-4l-4-4"></path>
+                      </svg>
+                      Technologies
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                      <span
+                        class="px-3 py-1 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300 rounded-full text-xs font-medium">PHP</span>
+                      <span
+                        class="px-3 py-1 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300 rounded-full text-xs font-medium">MySQL</span>
+                      <span
+                        class="px-3 py-1 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300 rounded-full text-xs font-medium">JavaScript</span>
+                      <span
+                        class="px-3 py-1 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300 rounded-full text-xs font-medium">Bootstrap</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex flex-col sm:flex-row gap-3">
+                  <a href="https://mahadehasansabbir.github.io/Blood-donation/" target="_blank" rel="noopener"
+                    class="inline-flex items-center justify-center gap-2 bg-rose-600 hover:bg-rose-700 text-white px-6 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-xl">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                    </svg>
+                    View Live
+                  </a>
+                  <a href="https://github.com/MahadeHasanSabbir/Blood-donation" target="_blank" rel="noopener"
+                    class="inline-flex items-center justify-center gap-2 border-2 border-rose-500 text-rose-600 dark:text-rose-400 hover:bg-rose-500 hover:text-white px-6 py-4 rounded-xl font-bold transition-all transform hover:scale-105">
+                    <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                      <path fill-rule="evenodd"
+                        d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
+                        clip-rule="evenodd"></path>
+                    </svg>
+                    Source
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 6 -->
+          <div class="swiper-slide flex items-center justify-center p-4">
+            <div
+              class="project-card flex flex-col lg:flex-row rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
+
+              <!-- Visual Side -->
+              <div class="lg:w-3/5 relative h-64 lg:h-full proj-visual proj-visual--cyan">
+                <div class="proj-window">
+                  <div class="proj-window__bar">
+                    <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+                    <span class="proj-window__title">chat / MessageController.php</span>
+                  </div>
+                  <pre class="proj-window__code"><code><span class="c-key">public function</span> <span class="c-fn">send</span>(<span class="c-var">Request</span> <span class="c-var">$request</span>) {
+  <span class="c-var">$message</span> = <span class="c-var">Message</span>::<span class="c-fn">create</span>([
+    <span class="c-str">'from_id'</span> => <span class="c-fn">auth</span>()-><span class="c-fn">id</span>(),
+    <span class="c-str">'to_id'</span>   => <span class="c-var">$request</span>->to,
+    <span class="c-str">'body'</span>    => <span class="c-var">$request</span>->body,
+  ]);
+
+  <span class="c-fn">broadcast</span>(<span class="c-key">new</span> <span class="c-var">MessageSent</span>(<span class="c-var">$message</span>))
+    -><span class="c-fn">toOthers</span>(); <span class="c-cmt">// pushed via Pusher</span>
+}</code></pre>
+                </div>
+                <span class="proj-tag">Real-time · Pusher</span>
+              </div>
+              <!-- Content Side -->
+              <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
+                <span class="text-cyan-600 dark:text-cyan-400 font-bold uppercase tracking-widest text-sm mb-4">Real-time
+                  Messaging</span>
+                <h3 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Chat Application</h3>
+                <div class="space-y-6 mb-8">
+                  <div>
+                    <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
+                      <svg class="w-5 h-5 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                      Problem Solved
+                    </h4>
+                    <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed">A Laravel messaging app with
+                      authenticated one-to-one conversations. Uses the Pusher API to push new messages to recipients in
+                      real time, so the chat updates without a page refresh.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
+                      <svg class="w-5 h-5 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 20l4-16m4 4l4 4m-4 12l4-4m-12 0l-4-4m4-4l-4-4"></path>
+                      </svg>
+                      Technologies
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                      <span
+                        class="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 rounded-full text-xs font-medium">Laravel</span>
+                      <span
+                        class="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 rounded-full text-xs font-medium">Pusher</span>
+                      <span
+                        class="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 rounded-full text-xs font-medium">MySQL</span>
+                      <span
+                        class="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 rounded-full text-xs font-medium">JavaScript</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="https://github.com/MahadeHasanSabbir/chat-app" target="_blank" rel="noopener"
+                  class="inline-flex items-center justify-center gap-3 bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-xl">
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd"
                       d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
@@ -579,8 +976,10 @@
                   unified travel platform.</div>
                 <div class="commit-change">Optimized MySQL schemas and queries to improve search and reservation
                   performance.</div>
-                <div class="commit-change">Integrated payment gateway and third-party travel data services with robust
+                <div class="commit-change">Integrated payment gateways and third-party travel data services with robust
                   error handling.</div>
+                <div class="commit-change">Built webhook handlers to process asynchronous payment events reliably and keep
+                  bookings in sync.</div>
                 <div class="commit-change">Refactored legacy endpoints to improve scalability and maintainability.</div>
                 <div class="commit-change fix">Fixed API response delays and reduced backend processing time for
                   high-volume requests.</div>
@@ -596,6 +995,11 @@
                 <span
                   class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">REST
                   APIs</span>
+                <span
+                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Webhooks</span>
+                <span
+                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Payment
+                  Gateways</span>
                 <span
                   class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">OTA
                   Systems</span>
@@ -697,7 +1101,27 @@
     class="min-h-screen flex flex-col justify-center items-center px-4 py-20 bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 dark:from-green-900 dark:via-blue-900 dark:to-purple-900">
     <div class="max-w-4xl mx-auto text-center w-full">
       <h2 class="text-4xl font-bold mb-6 text-gray-800 dark:text-white animate-on-scroll">Get In Touch</h2>
-      <p class="text-lg text-gray-700 dark:text-gray-300 mb-8 animate-on-scroll">Let's discuss your next project</p>
+      <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 animate-on-scroll">Let's discuss your next project</p>
+
+      <!-- Timezone comparison card -->
+      <div
+        class="inline-flex flex-wrap items-center justify-center gap-x-4 gap-y-2 mb-8 px-5 py-3 rounded-xl font-mono text-sm bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm border border-gray-200/60 dark:border-white/10 shadow-sm animate-on-scroll">
+        <span class="inline-flex items-center gap-2 text-gray-700 dark:text-gray-200">
+          <svg class="w-4 h-4 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+          </svg>
+          My time · Dhaka, Bangladesh
+          <span class="js-dhaka-time font-semibold text-blue-600 dark:text-blue-400 tabular-nums">--:--:--</span>
+          <span class="text-xs text-gray-400 dark:text-gray-500">GMT+6</span>
+        </span>
+        <span class="hidden sm:inline text-gray-300 dark:text-gray-600" aria-hidden="true">|</span>
+        <span class="text-xs text-gray-500 dark:text-gray-400">
+          Your time
+          <span class="js-local-time font-semibold text-gray-700 dark:text-gray-300 tabular-nums">--:--:--</span>
+          (<span class="js-local-tz">Local</span>)
+        </span>
+      </div>
 
       <form name="contact" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field"
         class="contact-form space-y-6 w-full max-w-lg bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm p-8 rounded-2xl shadow-2xl border border-gray-200/50 dark:border-white/20 mx-auto">
@@ -737,6 +1161,18 @@
           <p id="form-status" class="hidden mt-4 text-sm font-medium rounded-lg p-3" role="status"></p>
         </div>
       </form>
+
+      <p class="mt-6 text-sm text-gray-600 dark:text-gray-400 animate-on-scroll">
+        Prefer email?
+        <a href="mailto:mahadehasanbd00@gmail.com"
+          class="inline-flex items-center gap-1 font-medium text-blue-600 dark:text-blue-400 hover:underline">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
+            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+          </svg>
+          mahadehasanbd00@gmail.com
+        </a>
+      </p>
     </div>
   </section>
 
@@ -768,14 +1204,8 @@
 
 
   <!-- Scripts -->
-  <script src="tailwind.min.js"></script>
-  <script>
-    window.tailwind.config = {
-      darkMode: 'class'
-    }
-  </script>
   <script src="swiper-bundle.min.js" defer></script>
-  <script src="script.js" defer></script>
+  <script src="script.js?v=5" defer></script>
 </body>
 
 </html>

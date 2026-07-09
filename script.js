@@ -125,6 +125,9 @@ document.addEventListener('DOMContentLoaded', () => {
         loop: true,
         autoHeight: true,
         grabCursor: true,
+        // Recover cleanly if the slider is initialised while hidden or the DOM changes
+        observer: true,
+        observeParents: true,
         autoplay: { delay: 5000, disableOnInteraction: false },
         pagination: { el: '.swiper-pagination', clickable: true },
         navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
@@ -202,5 +205,33 @@ document.addEventListener('DOMContentLoaded', () => {
       link.classList.toggle('active', link.getAttribute('href') === `#${currentId}`);
     });
   }, { passive: true });
+
+  /* ---------- 9. Live clocks (Dhaka + visitor's local time) ---------- */
+  const dhakaEls = document.querySelectorAll('.js-dhaka-time');
+  const localEls = document.querySelectorAll('.js-local-time');
+
+  if (dhakaEls.length || localEls.length) {
+    const opts = { hour: '2-digit', minute: '2-digit', second: '2-digit', hour12: true };
+    // Dhaka is fixed GMT+6 (no daylight saving), so this is always accurate
+    const dhakaFmt = new Intl.DateTimeFormat('en-US', { ...opts, timeZone: 'Asia/Dhaka' });
+    const localFmt = new Intl.DateTimeFormat('en-US', opts);
+
+    // Label the visitor's timezone (e.g. "Asia/Kolkata") — no permission needed
+    let localTz = 'Local';
+    try { localTz = Intl.DateTimeFormat().resolvedOptions().timeZone || 'Local'; } catch (e) {}
+    document.querySelectorAll('.js-local-tz').forEach(el => {
+      el.textContent = localTz.replace(/_/g, ' ');
+    });
+
+    function tickClocks() {
+      const now = new Date();
+      const d = dhakaFmt.format(now);
+      const l = localFmt.format(now);
+      dhakaEls.forEach(el => { el.textContent = d; });
+      localEls.forEach(el => { el.textContent = l; });
+    }
+    tickClocks();
+    setInterval(tickClocks, 1000);
+  }
 
 });
