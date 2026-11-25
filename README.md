@@ -14,6 +14,8 @@ A modern, responsive portfolio website built with HTML, CSS, and JavaScript feat
 - **Professional Design**: Modern developer aesthetic — grid backdrop, ambient glows, monospace accents, and syntax-highlighted code-window project previews
 - **SEO & Social**: Meta description, Open Graph / Twitter cards, canonical URL, JSON-LD Person schema, and an SVG favicon
 - **Proof Strip**: At-a-glance stats highlighting experience and delivery
+- **Editorial touches**: `// section` eyebrows, a `// now` status card in About, neutral skill tags, and a copy-to-clipboard email button
+- **Reduced motion**: Typing animation, scroll reveals and slider autoplay are disabled for visitors who prefer reduced motion
 
 ## Technologies Used
 
@@ -39,6 +41,17 @@ npx tailwindcss@3 -i input.css -o tailwind.built.css --content "./index.html,./s
 ```
 
 where `input.css` contains the three `@tailwind base; @tailwind components; @tailwind utilities;` directives and your config sets `darkMode: 'class'`. Custom styles and animations live in `style.css`, which loads *after* `tailwind.built.css` so its rules win.
+
+## Updating the CV & Resume
+
+The PDFs are generated from print-styled HTML in `docs/` (`resume.html` = 1 page, `cv.html` = 2 pages, shared `doc.css`). `docs/` is git-ignored so it never deploys. After editing, re-export with headless Chrome:
+
+```bash
+chrome --headless=new --no-pdf-header-footer --virtual-time-budget=6000 --print-to-pdf=Md_Mahade_Hasan_Sabbir_Resume.pdf docs/resume.html
+chrome --headless=new --no-pdf-header-footer --virtual-time-budget=6000 --print-to-pdf=Md_Mahade_Hasan_Sabbir_CV.pdf docs/cv.html
+```
+
+Check that the resume is still exactly one page.
 
 ## Color Scheme
 
@@ -66,8 +79,8 @@ portfolio/
 ├── swiper-bundle.min.{css,js}        # Swiper carousel library
 ├── netlify.toml                      # Netlify configuration
 ├── _redirects                        # SPA routing for Netlify
+├── icons/                            # Tech logos for project tags (from Devicon, MIT)
 ├── profile-photo.png                 # Profile photo
-├── about.png                         # About section photo
 ├── Md_Mahade_Hasan_Sabbir_CV.pdf     # CV
 ├── Md_Mahade_Hasan_Sabbir_Resume.pdf # Resume
 └── README.md                         # This file

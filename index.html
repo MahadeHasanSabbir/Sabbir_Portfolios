@@ -5,11 +5,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Md Mahade Hasan Sabbir — Back-end Developer (PHP / Laravel)</title>
+  <title>Md Mahade Hasan Sabbir — Back-end Developer (PHP)</title>
 
   <!-- Primary SEO -->
   <meta name="description"
-    content="Md Mahade Hasan Sabbir — back-end developer specialising in scalable PHP & Laravel APIs, MySQL optimisation, and high-performance systems. View projects, experience, and resume." />
+    content="Md Mahade Hasan Sabbir — back-end developer at Innovate Solution building PHP APIs for an OTA travel platform. View projects, experience, and resume." />
   <meta name="author" content="Md Mahade Hasan Sabbir" />
   <meta name="keywords"
     content="Md Mahade Hasan Sabbir, Back-end Developer, PHP Developer, Laravel Developer, API Development, MySQL, Bangladesh" />
@@ -23,18 +23,18 @@
 
   <!-- Open Graph -->
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Md Mahade Hasan Sabbir — Back-end Developer (PHP / Laravel)" />
+  <meta property="og:title" content="Md Mahade Hasan Sabbir — Back-end Developer (PHP)" />
   <meta property="og:description"
-    content="Back-end developer specialising in scalable PHP & Laravel APIs, MySQL optimisation, and high-performance systems." />
+    content="Back-end developer building PHP APIs, MySQL-backed systems, and OTA travel integrations." />
   <meta property="og:url" content="https://mahadehasansabbir.netlify.app/" />
   <meta property="og:image" content="https://mahadehasansabbir.netlify.app/profile-photo.png" />
   <meta property="og:site_name" content="Md Mahade Hasan Sabbir" />
 
   <!-- Twitter -->
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Md Mahade Hasan Sabbir — Back-end Developer (PHP / Laravel)" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Md Mahade Hasan Sabbir — Back-end Developer (PHP)" />
   <meta name="twitter:description"
-    content="Back-end developer specialising in scalable PHP & Laravel APIs, MySQL optimisation, and high-performance systems." />
+    content="Back-end developer building PHP APIs, MySQL-backed systems, and OTA travel integrations." />
   <meta name="twitter:image" content="https://mahadehasansabbir.netlify.app/profile-photo.png" />
 
   <!-- Structured data -->
@@ -43,13 +43,16 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "Md Mahade Hasan Sabbir",
-    "jobTitle": "Back-end Developer",
+    "jobTitle": "Junior Back-end Developer",
+    "image": "https://mahadehasansabbir.netlify.app/profile-photo.png",
     "url": "https://mahadehasansabbir.netlify.app/",
     "sameAs": [
       "https://github.com/MahadeHasanSabbir",
       "https://linkedin.com/in/mahadehasansabbir"
     ],
-    "knowsAbout": ["PHP", "Laravel", "MySQL", "REST APIs", "Node.js", "Database Optimization", "Webhooks", "Payment Gateway Integration"],
+    "knowsAbout": ["PHP", "Laravel", "Node.js", "MySQL", "REST APIs", "Webhooks", "Payment Gateway Integration", "Database Optimization", "Docker", "Git"],
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Bangladesh University" },
+    "homeLocation": { "@type": "Place", "name": "Dhaka, Bangladesh" },
     "worksFor": { "@type": "Organization", "name": "Innovate Solution" }
   }
   </script>
@@ -57,18 +60,17 @@
   <!-- Preconnect to external domains -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <!-- Preload Critical Assets -->
   <link rel="preload" href="profile-photo.png" as="image">
 
   <!-- Precompiled Tailwind utilities (static, no runtime JIT) -->
-  <link rel="stylesheet" href="tailwind.built.css?v=5" />
+  <link rel="stylesheet" href="tailwind.built.css?v=6" />
   <!-- Swiper first so our custom overrides in style.css win -->
   <link rel="stylesheet" href="swiper-bundle.min.css" />
   <!-- Critical Styles -->
-  <link rel="stylesheet" href="style.css?v=5" />
+  <link rel="stylesheet" href="style.css?v=9" />
 
   <!-- Apply saved theme before the page paints (prevents flash) -->
   <script>
@@ -88,7 +90,8 @@
     class="fixed w-full bg-white/85 dark:bg-slate-900/85 backdrop-blur-md shadow-lg z-50 transition-all duration-300 border-b border-gray-200/60 dark:border-white/5">
 
     <div class="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-      <a href="#hero" class="text-2xl font-bold bg-gradient-to-r from-blue-600 to-green-600 bg-clip-text text-transparent">Sabbir</a>
+      <a href="#hero" class="text-xl font-bold tracking-tight text-gray-900 dark:text-white">Sabbir<span
+          class="text-blue-600 dark:text-blue-400">.</span></a>
 
       <div class="flex items-center gap-4">
         <!-- Desktop links -->
@@ -136,14 +139,21 @@
     </div>
 
     <!-- Mobile menu panel -->
-    <div id="mobile-menu" class="hidden md:hidden border-t border-gray-200/60 dark:border-white/10 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md">
+    <div id="mobile-menu"
+      class="hidden md:hidden border-t border-gray-200/60 dark:border-white/10 bg-white/95 dark:bg-slate-900/95 backdrop-blur-md">
       <div class="px-4 py-3 flex flex-col gap-1">
-        <a href="#about" class="mobile-link block py-3 px-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition">About</a>
-        <a href="#services" class="mobile-link block py-3 px-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition">Services</a>
-        <a href="#projects" class="mobile-link block py-3 px-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition">Projects</a>
-        <a href="#experience" class="mobile-link block py-3 px-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition">Experience</a>
-        <a href="#resume" class="mobile-link block py-3 px-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition">Resume</a>
-        <a href="#contact" class="mobile-link block py-3 px-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition">Contact</a>
+        <a href="#about"
+          class="mobile-link block py-3 px-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition">About</a>
+        <a href="#services"
+          class="mobile-link block py-3 px-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition">Services</a>
+        <a href="#projects"
+          class="mobile-link block py-3 px-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition">Projects</a>
+        <a href="#experience"
+          class="mobile-link block py-3 px-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition">Experience</a>
+        <a href="#resume"
+          class="mobile-link block py-3 px-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition">Resume</a>
+        <a href="#contact"
+          class="mobile-link block py-3 px-3 rounded-lg text-gray-700 dark:text-gray-300 hover:bg-blue-50 dark:hover:bg-white/5 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition">Contact</a>
       </div>
     </div>
   </nav>
@@ -165,7 +175,7 @@
         <div
           class="inline-flex items-center gap-2 mb-3 px-4 py-1.5 rounded-full text-xs font-mono font-medium bg-green-500/10 text-green-600 dark:text-green-400 border border-green-500/20 animate-on-scroll">
           <span class="status-dot" aria-hidden="true"></span>
-          Available for backend roles &amp; freelance
+          Currently at Innovate Solution · Open to collaborate
         </div>
 
         <!-- Live local time (Dhaka) -->
@@ -181,7 +191,7 @@
         </div>
 
         <h1
-          class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold mb-4 md:mb-6 bg-gradient-to-r from-blue-400 via-purple-500 to-green-400 bg-clip-text text-transparent leading-tight animate-on-scroll">
+          class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-bold tracking-tight mb-4 md:mb-6 text-gray-900 dark:text-white leading-tight animate-on-scroll">
           Md Mahade Hasan Sabbir
         </h1>
 
@@ -192,40 +202,43 @@
           <span class="type-cursor" aria-hidden="true"></span>
         </div>
 
-        <p
-          class="text-base sm:text-lg text-gray-500 dark:text-gray-400 mb-8 max-w-2xl animate-on-scroll px-4 md:px-0">
-          I build scalable web applications and robust, secure APIs with the
-          <span class="font-semibold text-gray-700 dark:text-gray-200">PHP &amp; Laravel</span> ecosystem —
-          turning complex requirements into efficient, maintainable systems.
+        <p class="text-base sm:text-lg text-gray-500 dark:text-gray-400 mb-8 max-w-2xl animate-on-scroll px-4 md:px-0">
+          I build reliable APIs and back-end systems with
+          <span class="font-semibold text-gray-700 dark:text-gray-200">PHP &amp; MySQL</span> —
+          currently powering flight, hotel and tour booking flows for an OTA travel platform.
         </p>
 
         <div class="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center md:justify-start w-full animate-on-scroll">
           <a href="#projects"
-            class="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition transform hover:scale-105 shadow-lg shadow-blue-500/25 text-sm sm:text-base font-medium">
+            class="bg-blue-600 hover:bg-blue-700 text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors text-sm sm:text-base font-medium">
             View My Work
           </a>
           <a href="#contact"
-            class="border-2 border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition transform hover:scale-105 text-sm sm:text-base font-medium">
+            class="border border-gray-300 dark:border-white/15 text-gray-700 dark:text-gray-200 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 px-6 sm:px-8 py-3 sm:py-4 rounded-lg transition-colors text-sm sm:text-base font-medium">
             Get In Touch
           </a>
         </div>
 
         <!-- Social links -->
         <div class="flex items-center gap-5 mt-8 animate-on-scroll">
-          <a href="https://github.com/MahadeHasanSabbir" target="_blank" rel="noopener" aria-label="GitHub profile"
-            class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors hover:-translate-y-0.5 transform">
+          <a href="https://github.com/MahadeHasanSabbir" target="_blank" rel="noopener noreferrer"
+            aria-label="GitHub profile"
+            class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+              <path
+                d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
             </svg>
           </a>
-          <a href="https://linkedin.com/in/mahadehasansabbir" target="_blank" rel="noopener" aria-label="LinkedIn profile"
-            class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors hover:-translate-y-0.5 transform">
+          <a href="https://linkedin.com/in/mahadehasansabbir" target="_blank" rel="noopener noreferrer"
+            aria-label="LinkedIn profile"
+            class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
-              <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+              <path
+                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
             </svg>
           </a>
           <a href="mailto:mahadehasanbd00@gmail.com" aria-label="Send an email"
-            class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors hover:-translate-y-0.5 transform">
+            class="text-gray-400 hover:text-blue-600 dark:hover:text-blue-400 transition-colors">
             <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
               <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
               <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
@@ -239,8 +252,7 @@
         <div class="profile-ring relative">
           <img src="profile-photo.png" alt="Portrait of Md Mahade Hasan Sabbir"
             class="relative z-10 w-36 h-36 sm:w-44 sm:h-44 md:w-52 md:h-52 lg:w-60 lg:h-60 xl:w-64 xl:h-64 rounded-full object-cover shadow-2xl border-4 border-white dark:border-slate-800"
-            loading="eager" decoding="async" fetchpriority="high"
-            onerror="this.src='https://via.placeholder.com/256x256/3b82f6/ffffff?text=Profile+Photo'">
+            width="256" height="256" loading="eager" decoding="async" fetchpriority="high">
         </div>
       </div>
     </div>
@@ -248,211 +260,173 @@
     <!-- Scroll cue -->
     <a href="#about" aria-label="Scroll to about section"
       class="scroll-cue hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 z-10 text-gray-400 dark:text-gray-500 hover:text-blue-500 transition-colors">
-      <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path>
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
       </svg>
     </a>
   </section>
 
   <!-- ===================== ABOUT ===================== -->
-  <section id="about" class="flex flex-col justify-center items-center px-4 py-20 animate-slideUp">
-
+  <section id="about" class="px-4 py-24">
     <div class="max-w-6xl mx-auto w-full">
-      <h2 class="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white animate-on-scroll">About Me</h2>
+      <p class="section-eyebrow animate-on-scroll">// about</p>
+      <h2 class="section-title animate-on-scroll">Backend first, by choice.</h2>
 
-      <div class="flex flex-col lg:flex-row items-center gap-12 px-4 md:px-0">
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-10 lg:gap-14 mt-10">
+        <!-- Bio -->
+        <div class="lg:col-span-3 text-lg text-gray-600 dark:text-gray-300 leading-relaxed animate-on-scroll">
+          <p>
+            I'm a back-end developer with <span class="font-semibold text-gray-800 dark:text-gray-100">1.5+ years</span>
+            of experience building travel booking APIs at Innovate Solution — REST endpoints, MySQL tuning and
+            payment integrations.
+          </p>
+        </div>
 
-        <!-- Profile Image -->
-        <div class="lg:w-1/2 flex justify-center">
-          <div class="relative w-full max-w-xs sm:max-w-sm md:max-w-md">
-            <img src="about.png" alt="About Md Mahade Hasan Sabbir"
-              class="w-full aspect-[3/5] object-cover rounded-2xl shadow-2xl" loading="lazy" decoding="async"
-              onerror="this.src='https://via.placeholder.com/384x640/10b981/ffffff?text=About+Photo'">
+        <!-- Now card -->
+        <aside class="lg:col-span-2 now-card animate-on-scroll" aria-label="Current status">
+          <p class="now-card__title">// now</p>
+          <dl>
+            <div>
+              <dt>role</dt>
+              <dd>Junior Back-end Developer</dd>
+            </div>
+            <div>
+              <dt>at</dt>
+              <dd>Innovate Solution</dd>
+            </div>
+            <div>
+              <dt>focus</dt>
+              <dd>OTA / travel APIs</dd>
+            </div>
+            <div>
+              <dt>stack</dt>
+              <dd>PHP (in-house framework) · MySQL</dd>
+            </div>
+            <div>
+              <dt>next</dt>
+              <dd>Go — team migration in 2027</dd>
+            </div>
+            <div>
+              <dt>based</dt>
+              <dd>Dhaka, BD</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
 
-            <div class="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/10 to-transparent"></div>
+      <!-- Skills -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-x-10 gap-y-8 mt-14">
+        <div class="skill-group animate-on-scroll">
+          <h3 class="skill-group__title">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01">
+              </path>
+            </svg>
+            Backend
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-tag">PHP</span><span class="skill-tag">Laravel</span><span
+              class="skill-tag">Node.js</span><span class="skill-tag">REST APIs</span><span
+              class="skill-tag">Webhooks</span><span class="skill-tag">Payment Gateways</span>
           </div>
         </div>
 
-        <!-- Description -->
-        <div class="lg:w-1/2">
-          <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 leading-relaxed animate-on-scroll text-justify">
-
-            I am a results-driven Back-end Developer with years of professional experience in architecting and
-            maintaining scalable web applications.
-            I specialize in building robust APIs and secure, high-performance systems using the PHP and Laravel
-            ecosystem.
-            My focus is on creating efficient, maintainable code that drives business value and solves complex technical
-            challenges.
-
-          </p>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <!-- Backend -->
-            <div
-              class="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:shadow-md transition-all animate-left">
-              <div class="flex items-center gap-4 mb-4">
-                <div class="p-3 bg-blue-500/10 rounded-xl text-blue-600">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M5 12h14M5 12a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v4a2 2 0 01-2 2M5 12a2 2 0 00-2 2v4a2 2 0 002 2h14a2 2 0 002-2v-4a2 2 0 00-2-2m-2-4h.01M17 16h.01">
-                    </path>
-                  </svg>
-                </div>
-                <h3 class="font-bold text-lg">Backend Core</h3>
-              </div>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg text-xs font-semibold uppercase tracking-wider">PHP</span>
-                <span
-                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Laravel</span>
-                <span
-                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Node.js</span>
-                <span
-                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg text-xs font-semibold uppercase tracking-wider">RESTful
-                  APIs</span>
-                <span
-                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Webhooks</span>
-                <span
-                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Payment
-                  Gateways</span>
-              </div>
-            </div>
-
-            <!-- Database -->
-            <div
-              class="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:shadow-md transition-all animate-right">
-              <div class="flex items-center gap-4 mb-4">
-                <div class="p-3 bg-green-500/10 rounded-xl text-green-600">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M4 7v10c0 2 1 3 3 3h10c2 0 3-1 3-3V7c0-2-1-3-3-3H7c-2 0-3 1-3 3zm0 4h16m-16 4h16"></path>
-                  </svg>
-                </div>
-                <h3 class="font-bold text-lg">Architecture</h3>
-              </div>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-1 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-lg text-xs font-semibold uppercase tracking-wider">MySQL</span>
-                <span
-                  class="px-3 py-1 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Database
-                  Optimization</span>
-                <span
-                  class="px-3 py-1 bg-green-100 dark:bg-green-900/40 text-green-700 dark:text-green-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Schema
-                  Design</span>
-              </div>
-
-            </div>
-
-            <!-- Tools -->
-            <div
-              class="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:shadow-md transition-all animate-left">
-              <div class="flex items-center gap-4 mb-4">
-                <div class="p-3 bg-purple-500/10 rounded-xl text-purple-600">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z">
-                    </path>
-                  </svg>
-                </div>
-                <h3 class="font-bold text-lg">Infrastructure</h3>
-              </div>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-1 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Git
-                  / GitHub</span>
-                <span
-                  class="px-3 py-1 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Docker</span>
-                <span
-                  class="px-3 py-1 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 rounded-lg text-xs font-semibold uppercase tracking-wider">CI/CD</span>
-                <span
-                  class="px-3 py-1 bg-purple-100 dark:bg-purple-900/40 text-purple-700 dark:text-purple-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Postman</span>
-              </div>
-            </div>
-
-            <!-- Frontend -->
-            <div
-              class="bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm p-6 rounded-2xl border border-gray-100 dark:border-white/10 shadow-sm hover:shadow-md transition-all animate-right">
-              <div class="flex items-center gap-4 mb-4">
-                <div class="p-3 bg-orange-500/10 rounded-xl text-orange-600">
-                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                      d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
-                    </path>
-                  </svg>
-                </div>
-                <h3 class="font-bold text-lg">Ecosystem</h3>
-              </div>
-              <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-1 bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-300 rounded-lg text-xs font-semibold uppercase tracking-wider">JavaScript
-                  (ES6+)</span>
-                <span
-                  class="px-3 py-1 bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Tailwind
-                  CSS</span>
-                <span
-                  class="px-3 py-1 bg-orange-100 dark:bg-orange-900/40 text-orange-700 dark:text-orange-300 rounded-lg text-xs font-semibold uppercase tracking-wider">Modern
-                  UI Design</span>
-              </div>
-
-            </div>
+        <div class="skill-group animate-on-scroll">
+          <h3 class="skill-group__title">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M4 7c0-1.657 3.582-3 8-3s8 1.343 8 3-3.582 3-8 3-8-1.343-8-3zm0 0v10c0 1.657 3.582 3 8 3s8-1.343 8-3V7M4 12c0 1.657 3.582 3 8 3s8-1.343 8-3">
+              </path>
+            </svg>
+            Database
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-tag">MySQL</span><span class="skill-tag">Query Optimization</span><span
+              class="skill-tag">Schema Design</span>
           </div>
+        </div>
 
+        <div class="skill-group animate-on-scroll">
+          <h3 class="skill-group__title">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.310-.826-2.370-2.370a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.350a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.310 2.370-2.370.996.608 2.296.07 2.572-1.065zM15 12a3 3 0 11-6 0 3 3 0 016 0z">
+              </path>
+            </svg>
+            DevOps &amp; Tools
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-tag">Git / GitHub</span><span class="skill-tag">Docker</span><span
+              class="skill-tag">CI/CD</span><span class="skill-tag">Postman</span>
+          </div>
+        </div>
+
+        <div class="skill-group animate-on-scroll">
+          <h3 class="skill-group__title">
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z">
+              </path>
+            </svg>
+            Frontend
+          </h3>
+          <div class="flex flex-wrap gap-2">
+            <span class="skill-tag">JavaScript (ES6+)</span><span class="skill-tag">Tailwind CSS</span><span
+              class="skill-tag">Bootstrap</span><span class="skill-tag">Blade</span>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ===================== SERVICES ===================== -->
-  <section id="services" class="py-20 bg-gray-50/10 dark:bg-gray-900/10">
-    <div class="max-w-5xl mx-auto px-4 md:px-0">
+  <section id="services" class="px-4 py-24">
+    <div class="max-w-6xl mx-auto">
 
       <!-- Proof / stats strip -->
-      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-16 px-2 md:px-0">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-20">
         <div class="stat-card animate-on-scroll">
-          <div class="stat-num">2+</div>
-          <div class="stat-label">Years building backends</div>
+          <div class="stat-num">1.5+</div>
+          <div class="stat-label">Years in production backend</div>
         </div>
         <div class="stat-card animate-on-scroll">
           <div class="stat-num">6</div>
-          <div class="stat-label">Projects shipped</div>
+          <div class="stat-label">Travel API domains</div>
+        </div>
+        <div class="stat-card animate-on-scroll">
+          <div class="stat-num">2</div>
+          <div class="stat-label">Roles at Innovate Solution</div>
         </div>
         <div class="stat-card animate-on-scroll">
           <div class="stat-num">6</div>
-          <div class="stat-label">API domains delivered</div>
-        </div>
-        <div class="stat-card animate-on-scroll">
-          <div class="stat-num">REST</div>
-          <div class="stat-label">API-first mindset</div>
+          <div class="stat-label">Personal projects built</div>
         </div>
       </div>
 
-      <h2 class="text-4xl font-bold mb-4 text-center text-gray-800 dark:text-white animate-on-scroll">What I Do</h2>
-      <p class="text-center text-gray-500 dark:text-gray-400 mb-12 max-w-2xl mx-auto animate-on-scroll">
-        Backend engineering focused on the parts users never see but always feel — speed, reliability, and clean data.
+      <p class="section-eyebrow animate-on-scroll">// what i do</p>
+      <h2 class="section-title animate-on-scroll">The parts users never see.</h2>
+      <p class="text-gray-500 dark:text-gray-400 mt-4 mb-12 max-w-2xl animate-on-scroll">
+        Backend work you feel as speed, reliability and clean data.
       </p>
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-2 md:px-0">
-        <!-- Scalable Systems -->
-        <div
-          class="p-8 bg-blue-500/5 dark:bg-blue-400/5 rounded-3xl border border-blue-500/10 animate-on-scroll hover:bg-blue-500/10 transition-colors">
-          <h3 class="text-blue-600 dark:text-blue-400 font-bold mb-4 text-xl">Scalable Backend</h3>
-          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Architecting high-performance server-side logic
-            and managing large-scale data migrations with precision and reliability.</p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="service-card animate-on-scroll">
+          <p class="service-card__num">01</p>
+          <h3 class="service-card__title">API development</h3>
+          <p class="service-card__text">REST endpoints for booking, search and data sync — validated, consistent and
+            documented so front-ends and partners can rely on them.</p>
         </div>
-
-        <!-- API Architecture -->
-        <div
-          class="p-8 bg-purple-500/5 dark:bg-purple-400/5 rounded-3xl border border-purple-500/10 animate-on-scroll hover:bg-purple-500/10 transition-colors">
-          <h3 class="text-purple-600 dark:text-purple-400 font-bold mb-4 text-xl">API Architecture</h3>
-          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Designing secure, documented RESTful services that
-            serve as the high-performance backbone for modern web and mobile apps.</p>
+        <div class="service-card animate-on-scroll">
+          <p class="service-card__num">02</p>
+          <h3 class="service-card__title">Integrations</h3>
+          <p class="service-card__text">Payment gateways, third-party travel suppliers and webhook handlers with
+            careful error handling, so asynchronous events never leave data out of sync.</p>
         </div>
-
-        <!-- Optimization -->
-        <div
-          class="p-8 bg-green-500/5 dark:bg-green-400/5 rounded-3xl border border-green-500/10 animate-on-scroll hover:bg-green-500/10 transition-colors">
-          <h3 class="text-green-600 dark:text-green-400 font-bold mb-4 text-xl">Optimization</h3>
-          <p class="text-gray-600 dark:text-gray-400 leading-relaxed">Tuning database queries and server response times
-            to ensure a seamless, lag-free experience for high-traffic environments.</p>
+        <div class="service-card animate-on-scroll">
+          <p class="service-card__num">03</p>
+          <h3 class="service-card__title">Database tuning</h3>
+          <p class="service-card__text">MySQL schema design, indexing and query optimization to keep search and
+            reservation flows fast under real traffic.</p>
         </div>
       </div>
     </div>
@@ -460,18 +434,100 @@
 
 
   <!-- ===================== PROJECTS ===================== -->
-  <section id="projects" class="min-h-screen flex flex-col justify-center items-center px-4 py-20 transition">
-    <div class="max-w-6xl mx-auto text-center w-full">
-      <h2 class="text-4xl font-bold mb-8 md:mb-12 text-gray-800 dark:text-white animate-on-scroll">My Projects</h2>
+  <section id="projects" class="px-4 py-24">
+    <div class="max-w-6xl mx-auto w-full">
+      <p class="section-eyebrow animate-on-scroll">// projects</p>
+      <h2 class="section-title animate-on-scroll">Things I've built.</h2>
+      <p class="text-gray-500 dark:text-gray-400 mt-4 mb-10 max-w-2xl animate-on-scroll">
+        University and personal practice projects from before and alongside my professional work — each one taught me
+        something I now use in production.
+      </p>
 
       <!-- Swiper Container -->
-      <div class="swiper projectsSwiper w-full h-auto lg:h-[80vh]">
+      <div class="swiper projectsSwiper w-full">
 
         <div class="swiper-wrapper">
+          <!-- Featured: Auction Marketplace -->
+          <div class="swiper-slide flex items-center justify-center p-4">
+            <div
+              class="project-card flex flex-col lg:flex-row rounded-3xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
+
+              <!-- Visual Side -->
+              <div class="lg:w-3/5 relative h-64 lg:h-full proj-visual proj-visual--purple">
+                <div class="proj-window">
+                  <div class="proj-window__bar">
+                    <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
+                    <span class="proj-window__title">auction / PlaceBid.php</span>
+                  </div>
+                  <pre class="proj-window__code"><code><span class="c-key">public function</span> <span class="c-fn">placeBid</span>(<span class="c-var">Auction</span> <span class="c-var">$auction</span>, <span class="c-var">int</span> <span class="c-var">$amount</span>) {
+  <span class="c-var">DB</span>::<span class="c-fn">transaction</span>(<span class="c-key">function</span> () <span class="c-key">use</span> (...) {
+    <span class="c-var">$this</span>->wallet-><span class="c-fn">hold</span>(<span class="c-var">$bidder</span>, <span class="c-var">$amount</span>);
+    <span class="c-var">$bid</span> = <span class="c-var">$auction</span>-><span class="c-fn">bids</span>()-><span class="c-fn">create</span>([...]);
+
+    <span class="c-key">if</span> (<span class="c-var">$auction</span>-><span class="c-fn">endsWithin</span>(<span class="c-num">60</span>))
+      <span class="c-var">$auction</span>-><span class="c-fn">extend</span>(<span class="c-num">120</span>); <span class="c-cmt">// anti-sniping</span>
+
+    <span class="c-fn">broadcast</span>(<span class="c-key">new</span> <span class="c-var">BidPlaced</span>(<span class="c-var">$bid</span>)); <span class="c-cmt">// Reverb</span>
+  });
+}</code></pre>
+                </div>
+                <span class="proj-tag">Marketplace · Laravel 13</span>
+              </div>
+              <!-- Content Side -->
+              <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
+                <span class="project-eyebrow">University project, rebuilt as v2 · Marketplace</span>
+                <h3 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Auction Marketplace</h3>
+                <div class="space-y-6 mb-8">
+                  <div>
+                    <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
+                      <svg class="w-5 h-5 text-blue-500 dark:text-blue-400" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                      </svg>
+                      What it does
+                    </h4>
+                    <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed">My third university project,
+                      rebuilt in 2026 as a multi-vendor marketplace: live wallet bidding with proxy bids and anti-sniping,
+                      seller and admin panels, a double-entry ledger, SSLCommerz/Stripe payments, escrow orders and a
+                      versioned REST API.</p>
+                  </div>
+                  <div>
+                    <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
+                      <svg class="w-5 h-5 text-blue-500 dark:text-blue-400" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M10 20l4-16m4 4l4 4m-4 12l4-4m-12 0l-4-4m4-4l-4-4"></path>
+                      </svg>
+                      Technologies
+                    </h4>
+                    <div class="flex flex-wrap gap-2">
+                      <span class="skill-tag tech-tag"><img src="icons/laravel.svg" alt="" width="16" height="16" decoding="async">Laravel 13</span>
+                      <span class="skill-tag tech-tag"><img src="icons/livewire.svg" alt="" width="16" height="16" decoding="async">Livewire</span>
+                      <span class="skill-tag tech-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 5a1 1 0 011-1h14a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1V5zm0 5h16M10 10v10"/></svg>Filament</span>
+                      <span class="skill-tag tech-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"/></svg>Reverb</span>
+                      <span class="skill-tag tech-tag"><img src="icons/tailwindcss.svg" alt="" width="16" height="16" decoding="async">Tailwind CSS</span>
+                      <span class="skill-tag tech-tag"><img src="icons/mysql.svg" alt="" width="16" height="16" decoding="async">MySQL</span>
+                    </div>
+                  </div>
+                </div>
+                <a href="https://github.com/MahadeHasanSabbir/auction-app" target="_blank" rel="noopener noreferrer"
+                  class="btn-primary btn-lg">
+                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd"
+                      d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
+                      clip-rule="evenodd"></path>
+                  </svg>
+                  Project Source
+                </a>
+              </div>
+            </div>
+          </div>
+
           <!-- Project 1 -->
           <div class="swiper-slide flex items-center justify-center p-4">
             <div
-              class="project-card flex flex-col lg:flex-row rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
+              class="project-card flex flex-col lg:flex-row rounded-3xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
 
               <!-- Visual Side -->
               <div class="lg:w-3/5 relative h-64 lg:h-full proj-visual proj-visual--blue">
@@ -494,17 +550,17 @@
               </div>
               <!-- Content Side -->
               <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
-                <span class="text-blue-600 dark:text-blue-400 font-bold uppercase tracking-widest text-sm mb-4">Land
-                  Survey Tool</span>
+                <span class="project-eyebrow">University project · Land survey</span>
                 <h3 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Aminship</h3>
                 <div class="space-y-6 mb-8">
                   <div>
                     <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
-                      <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg class="w-5 h-5 text-blue-500 dark:text-blue-400" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                       </svg>
-                      Problem Solved
+                      What it does
                     </h4>
                     <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed">Developed a professional land
                       survey tool for accurate area calculation, helping surveyors and landowners measure complex land
@@ -512,27 +568,27 @@
                   </div>
                   <div>
                     <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
-                      <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg class="w-5 h-5 text-blue-500 dark:text-blue-400" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M10 20l4-16m4 4l4 4m-4 12l4-4m-12 0l-4-4m4-4l-4-4"></path>
                       </svg>
                       Technologies
                     </h4>
                     <div class="flex flex-wrap gap-2">
-                      <span
-                        class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium">PHP</span>
-                      <span
-                        class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium">MySQL</span>
-                      <span
-                        class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium">JavaScript</span>
-                      <span
-                        class="px-3 py-1 bg-blue-100 dark:bg-blue-900/30 text-blue-700 dark:text-blue-300 rounded-full text-xs font-medium">Bootstrap
-                        CSS</span>
+                      <span class="skill-tag tech-tag"><img src="icons/php.svg" alt="" width="16" height="16"
+                          decoding="async">PHP</span>
+                      <span class="skill-tag tech-tag"><img src="icons/mysql.svg" alt="" width="16" height="16"
+                          decoding="async">MySQL</span>
+                      <span class="skill-tag tech-tag"><img src="icons/javascript.svg" alt="" width="16" height="16"
+                          decoding="async">JavaScript</span>
+                      <span class="skill-tag tech-tag"><img src="icons/bootstrap.svg" alt="" width="16" height="16"
+                          decoding="async">Bootstrap</span>
                     </div>
                   </div>
                 </div>
-                <a href="https://github.com/MahadeHasanSabbir/Aminship" target="_blank"
-                  class="inline-flex items-center justify-center gap-3 bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-xl">
+                <a href="https://github.com/MahadeHasanSabbir/Aminship" target="_blank" rel="noopener noreferrer"
+                  class="btn-primary btn-lg">
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd"
                       d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
@@ -547,39 +603,41 @@
           <!-- Project 2 -->
           <div class="swiper-slide flex items-center justify-center p-4">
             <div
-              class="project-card flex flex-col lg:flex-row rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
+              class="project-card flex flex-col lg:flex-row rounded-3xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
 
               <!-- Visual Side -->
               <div class="lg:w-3/5 relative h-64 lg:h-full proj-visual proj-visual--green">
                 <div class="proj-window">
                   <div class="proj-window__bar">
                     <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
-                    <span class="proj-window__title">property-mgmt / routes/api.php</span>
+                    <span class="proj-window__title">property-management / tenants.php</span>
                   </div>
-                  <pre class="proj-window__code"><code><span class="c-var">Route</span>::<span class="c-fn">apiResource</span>(<span class="c-str">'properties'</span>, <span class="c-var">PropertyController</span>::<span class="c-key">class</span>);
-<span class="c-var">Route</span>::<span class="c-fn">apiResource</span>(<span class="c-str">'tenants'</span>, <span class="c-var">TenantController</span>::<span class="c-key">class</span>);
-
-<span class="c-var">Route</span>::<span class="c-fn">post</span>(<span class="c-str">'leases/{id}/renew'</span>, [
-  <span class="c-var">LeaseController</span>::<span class="c-key">class</span>, <span class="c-str">'renew'</span>
-])-><span class="c-fn">middleware</span>(<span class="c-str">'auth:sanctum'</span>);
-
-<span class="c-cmt">// 200 OK · avg response 84ms</span></code></pre>
+                  <pre
+                    class="proj-window__code"><code><span class="c-var">$stmt</span> = <span class="c-var">$pdo</span>-><span class="c-fn">prepare</span>(
+  <span class="c-str">'SELECT t.name, p.title, l.rent
+     FROM leases l
+     JOIN tenants t ON t.id = l.tenant_id
+     JOIN properties p ON p.id = l.property_id
+    WHERE l.owner_id = ? AND l.active = 1'</span>
+);
+<span class="c-var">$stmt</span>-><span class="c-fn">execute</span>([<span class="c-var">$ownerId</span>]);
+<span class="c-key">echo</span> <span class="c-fn">json_encode</span>(<span class="c-var">$stmt</span>-><span class="c-fn">fetchAll</span>()); <span class="c-cmt">// Ajax table</span></code></pre>
                 </div>
-                <span class="proj-tag">Real Estate · MySQL</span>
+                <span class="proj-tag">Real Estate · PHP</span>
               </div>
               <!-- Content Side -->
               <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
-                <span class="text-green-600 dark:text-green-400 font-bold uppercase tracking-widest text-sm mb-4">Real
-                  Estate Solutions</span>
+                <span class="project-eyebrow">Personal project · Real estate</span>
                 <h3 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Property Management</h3>
                 <div class="space-y-6 mb-8">
                   <div>
                     <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
-                      <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg class="w-5 h-5 text-blue-500 dark:text-blue-400" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                       </svg>
-                      Problem Solved
+                      What it does
                     </h4>
                     <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed">Streamlined property listings,
                       tenant management, and rental operations. Built to simplify the complex workflow of property
@@ -587,103 +645,31 @@
                   </div>
                   <div>
                     <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
-                      <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg class="w-5 h-5 text-blue-500 dark:text-blue-400" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M10 20l4-16m4 4l4 4m-4 12l4-4m-12 0l-4-4m4-4l-4-4"></path>
                       </svg>
                       Technologies
                     </h4>
                     <div class="flex flex-wrap gap-2">
-                      <span
-                        class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">PHP</span>
-                      <span
-                        class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">MySQL</span>
-                      <span
-                        class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Bootstrap
-                        CSS</span>
-                      <span
-                        class="px-3 py-1 bg-green-100 dark:bg-green-900/30 text-green-700 dark:text-green-300 rounded-full text-xs font-medium">Ajax</span>
+                      <span class="skill-tag tech-tag"><img src="icons/php.svg" alt="" width="16" height="16"
+                          decoding="async">PHP</span>
+                      <span class="skill-tag tech-tag"><img src="icons/mysql.svg" alt="" width="16" height="16"
+                          decoding="async">MySQL</span>
+                      <span class="skill-tag tech-tag"><img src="icons/bootstrap.svg" alt="" width="16" height="16"
+                          decoding="async">Bootstrap</span>
+                      <span class="skill-tag tech-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M7 16V4m0 0L3 8m4-4l4 4m6 0v12m0 0l4-4m-4 4l-4-4" />
+                        </svg>Ajax</span>
                     </div>
                   </div>
                 </div>
                 <a href="https://github.com/MahadeHasanSabbir/property-management" target="_blank"
-                  class="inline-flex items-center justify-center gap-3 bg-green-600 hover:bg-green-700 text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-xl">
-                  <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
-                    <path fill-rule="evenodd"
-                      d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
-                      clip-rule="evenodd"></path>
-                  </svg>
-                  Project Source
-                </a>
-              </div>
-            </div>
-          </div>
-
-          <!-- Project 3 -->
-          <div class="swiper-slide flex items-center justify-center p-4">
-            <div
-              class="project-card flex flex-col lg:flex-row rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
-
-              <!-- Visual Side -->
-              <div class="lg:w-3/5 relative h-64 lg:h-full proj-visual proj-visual--purple">
-                <div class="proj-window">
-                  <div class="proj-window__bar">
-                    <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
-                    <span class="proj-window__title">auction / PlaceBid.php</span>
-                  </div>
-                  <pre class="proj-window__code"><code><span class="c-key">public function</span> <span class="c-fn">placeBid</span>(<span class="c-var">Auction</span> <span class="c-var">$auction</span>, <span class="c-var">$amount</span>) {
-  <span class="c-var">DB</span>::<span class="c-fn">transaction</span>(<span class="c-key">function</span> () <span class="c-key">use</span> (...) {
-    <span class="c-key">if</span> (<span class="c-var">$amount</span> &lt;= <span class="c-var">$auction</span>->highest_bid)
-      <span class="c-key">throw new</span> <span class="c-var">BidTooLowException</span>;
-
-    <span class="c-var">$auction</span>-><span class="c-fn">bids</span>()-><span class="c-fn">create</span>([...]);
-    <span class="c-fn">broadcast</span>(<span class="c-key">new</span> <span class="c-var">BidPlaced</span>(<span class="c-var">$auction</span>));
-  });
-}</code></pre>
-                </div>
-                <span class="proj-tag">Real-time · Laravel</span>
-              </div>
-              <!-- Content Side -->
-              <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
-                <span
-                  class="text-purple-600 dark:text-purple-400 font-bold uppercase tracking-widest text-sm mb-4">E-Commerce
-                  Platform</span>
-                <h3 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Auction Application</h3>
-                <div class="space-y-6 mb-8">
-                  <div>
-                    <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
-                      <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                      </svg>
-                      Problem Solved
-                    </h4>
-                    <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed">Built a full-featured bidding
-                      platform with real-time updates. Enables secure user registration, bid management, and transaction
-                      tracking.</p>
-                  </div>
-                  <div>
-                    <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
-                      <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                          d="M10 20l4-16m4 4l4 4m-4 12l4-4m-12 0l-4-4m4-4l-4-4"></path>
-                      </svg>
-                      Technologies
-                    </h4>
-                    <div class="flex flex-wrap gap-2">
-                      <span
-                        class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Laravel</span>
-                      <span
-                        class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Tailwind
-                        CSS</span>
-                      <span
-                        class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">MySQL</span>
-                      <span class="px-3 py-1 bg-purple-100 dark:bg-purple-900/30 text-purple-700 dark:text-purple-300 rounded-full text-xs font-medium">Laravel Blade</span>
-                    </div>
-                  </div>
-                </div>
-                <a href="https://github.com/MahadeHasanSabbir/Auction-app" target="_blank"
-                  class="inline-flex items-center justify-center gap-3 bg-purple-600 hover:bg-purple-700 text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-xl">
+                  rel="noopener noreferrer"
+                  class="btn-primary btn-lg">
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd"
                       d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
@@ -698,7 +684,7 @@
           <!-- Project 4 -->
           <div class="swiper-slide flex items-center justify-center p-4">
             <div
-              class="project-card flex flex-col lg:flex-row rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
+              class="project-card flex flex-col lg:flex-row rounded-3xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
 
               <!-- Visual Side -->
               <div class="lg:w-3/5 relative h-64 lg:h-full proj-visual proj-visual--amber">
@@ -718,48 +704,54 @@
   <span class="c-var">LowStockAlert</span>::<span class="c-fn">dispatchIf</span>(<span class="c-var">$product</span>->stock &lt; <span class="c-num">10</span>);
 }</code></pre>
                 </div>
-                <span class="proj-tag">Laravel · MySQL</span>
+                <span class="proj-tag">Inventory · Laravel</span>
               </div>
               <!-- Content Side -->
               <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
-                <span class="text-amber-600 dark:text-amber-400 font-bold uppercase tracking-widest text-sm mb-4">Inventory
-                  System</span>
+                <span class="project-eyebrow">Personal project · Inventory</span>
                 <h3 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Inventory Management</h3>
                 <div class="space-y-6 mb-8">
                   <div>
                     <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
-                      <svg class="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg class="w-5 h-5 text-blue-500 dark:text-blue-400" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                       </svg>
-                      Problem Solved
+                      What it does
                     </h4>
-                    <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed">A Laravel-based system to track
+                    <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed">A Laravel-based system to
+                      track
                       products, suppliers, and stock movement in real time — with purchase/sales records and automatic
                       low-stock alerts to prevent shortages.</p>
                   </div>
                   <div>
                     <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
-                      <svg class="w-5 h-5 text-amber-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg class="w-5 h-5 text-blue-500 dark:text-blue-400" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M10 20l4-16m4 4l4 4m-4 12l4-4m-12 0l-4-4m4-4l-4-4"></path>
                       </svg>
                       Technologies
                     </h4>
                     <div class="flex flex-wrap gap-2">
-                      <span
-                        class="px-3 py-1 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 rounded-full text-xs font-medium">Laravel</span>
-                      <span
-                        class="px-3 py-1 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 rounded-full text-xs font-medium">Blade</span>
-                      <span
-                        class="px-3 py-1 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 rounded-full text-xs font-medium">MySQL</span>
-                      <span
-                        class="px-3 py-1 bg-amber-100 dark:bg-amber-900/30 text-amber-700 dark:text-amber-300 rounded-full text-xs font-medium">JavaScript</span>
+                      <span class="skill-tag tech-tag"><img src="icons/laravel.svg" alt="" width="16" height="16"
+                          decoding="async">Laravel</span>
+                      <span class="skill-tag tech-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4" />
+                        </svg>Blade</span>
+                      <span class="skill-tag tech-tag"><img src="icons/mysql.svg" alt="" width="16" height="16"
+                          decoding="async">MySQL</span>
+                      <span class="skill-tag tech-tag"><img src="icons/javascript.svg" alt="" width="16" height="16"
+                          decoding="async">JavaScript</span>
                     </div>
                   </div>
                 </div>
-                <a href="https://github.com/MahadeHasanSabbir/inventory-management" target="_blank" rel="noopener"
-                  class="inline-flex items-center justify-center gap-3 bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-xl">
+                <a href="https://github.com/MahadeHasanSabbir/inventory-management" target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn-primary btn-lg">
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd"
                       d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
@@ -774,7 +766,7 @@
           <!-- Project 5 -->
           <div class="swiper-slide flex items-center justify-center p-4">
             <div
-              class="project-card flex flex-col lg:flex-row rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
+              class="project-card flex flex-col lg:flex-row rounded-3xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
 
               <!-- Visual Side -->
               <div class="lg:w-3/5 relative h-64 lg:h-full proj-visual proj-visual--rose">
@@ -783,7 +775,8 @@
                     <span class="dot dot--r"></span><span class="dot dot--y"></span><span class="dot dot--g"></span>
                     <span class="proj-window__title">blood-donation / donors.php</span>
                   </div>
-                  <pre class="proj-window__code"><code><span class="c-var">$stmt</span> = <span class="c-var">$pdo</span>-><span class="c-fn">prepare</span>(
+                  <pre
+                    class="proj-window__code"><code><span class="c-var">$stmt</span> = <span class="c-var">$pdo</span>-><span class="c-fn">prepare</span>(
   <span class="c-str">"SELECT name, phone, district
    FROM donors
    WHERE blood_group = :bg
@@ -793,21 +786,21 @@
 <span class="c-var">$stmt</span>-><span class="c-fn">execute</span>([<span class="c-str">'bg'</span> => <span class="c-var">$group</span>]);
 <span class="c-var">$matches</span> = <span class="c-var">$stmt</span>-><span class="c-fn">fetchAll</span>(); <span class="c-cmt">// eligible donors</span></code></pre>
                 </div>
-                <span class="proj-tag">PHP · Live</span>
+                <span class="proj-tag">Healthcare · Live demo</span>
               </div>
               <!-- Content Side -->
               <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
-                <span class="text-rose-600 dark:text-rose-400 font-bold uppercase tracking-widest text-sm mb-4">Healthcare
-                  Platform</span>
+                <span class="project-eyebrow">Personal project · Healthcare</span>
                 <h3 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Blood Donation System</h3>
                 <div class="space-y-6 mb-8">
                   <div>
                     <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
-                      <svg class="w-5 h-5 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg class="w-5 h-5 text-blue-500 dark:text-blue-400" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                       </svg>
-                      Problem Solved
+                      What it does
                     </h4>
                     <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed">Connects donors with those in
                       need — a searchable registry filtered by blood group and location, with donor availability and
@@ -815,35 +808,38 @@
                   </div>
                   <div>
                     <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
-                      <svg class="w-5 h-5 text-rose-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg class="w-5 h-5 text-blue-500 dark:text-blue-400" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M10 20l4-16m4 4l4 4m-4 12l4-4m-12 0l-4-4m4-4l-4-4"></path>
                       </svg>
                       Technologies
                     </h4>
                     <div class="flex flex-wrap gap-2">
-                      <span
-                        class="px-3 py-1 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300 rounded-full text-xs font-medium">PHP</span>
-                      <span
-                        class="px-3 py-1 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300 rounded-full text-xs font-medium">MySQL</span>
-                      <span
-                        class="px-3 py-1 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300 rounded-full text-xs font-medium">JavaScript</span>
-                      <span
-                        class="px-3 py-1 bg-rose-100 dark:bg-rose-900/30 text-rose-700 dark:text-rose-300 rounded-full text-xs font-medium">Bootstrap</span>
+                      <span class="skill-tag tech-tag"><img src="icons/php.svg" alt="" width="16" height="16"
+                          decoding="async">PHP</span>
+                      <span class="skill-tag tech-tag"><img src="icons/mysql.svg" alt="" width="16" height="16"
+                          decoding="async">MySQL</span>
+                      <span class="skill-tag tech-tag"><img src="icons/javascript.svg" alt="" width="16" height="16"
+                          decoding="async">JavaScript</span>
+                      <span class="skill-tag tech-tag"><img src="icons/bootstrap.svg" alt="" width="16" height="16"
+                          decoding="async">Bootstrap</span>
                     </div>
                   </div>
                 </div>
                 <div class="flex flex-col sm:flex-row gap-3">
-                  <a href="https://mahadehasansabbir.github.io/Blood-donation/" target="_blank" rel="noopener"
-                    class="inline-flex items-center justify-center gap-2 bg-rose-600 hover:bg-rose-700 text-white px-6 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-xl">
+                  <a href="https://mahadehasansabbir.github.io/Blood-donation/" target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-semibold transition-colors">
                     <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                         d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
                     </svg>
                     View Live
                   </a>
-                  <a href="https://github.com/MahadeHasanSabbir/Blood-donation" target="_blank" rel="noopener"
-                    class="inline-flex items-center justify-center gap-2 border-2 border-rose-500 text-rose-600 dark:text-rose-400 hover:bg-rose-500 hover:text-white px-6 py-4 rounded-xl font-bold transition-all transform hover:scale-105">
+                  <a href="https://github.com/MahadeHasanSabbir/Blood-donation" target="_blank"
+                    rel="noopener noreferrer"
+                    class="inline-flex items-center justify-center gap-2 border border-gray-300 dark:border-white/15 text-gray-700 dark:text-gray-200 hover:border-blue-500 hover:text-blue-600 dark:hover:text-blue-400 px-6 py-3 rounded-lg font-semibold transition-colors">
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
                       <path fill-rule="evenodd"
                         d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
@@ -859,7 +855,7 @@
           <!-- Project 6 -->
           <div class="swiper-slide flex items-center justify-center p-4">
             <div
-              class="project-card flex flex-col lg:flex-row rounded-3xl shadow-2xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
+              class="project-card flex flex-col lg:flex-row rounded-3xl overflow-hidden border border-gray-100 dark:border-white/10 w-full max-w-6xl mx-auto">
 
               <!-- Visual Side -->
               <div class="lg:w-3/5 relative h-64 lg:h-full proj-visual proj-visual--cyan">
@@ -883,17 +879,17 @@
               </div>
               <!-- Content Side -->
               <div class="lg:w-2/5 p-8 lg:p-12 flex flex-col justify-center">
-                <span class="text-cyan-600 dark:text-cyan-400 font-bold uppercase tracking-widest text-sm mb-4">Real-time
-                  Messaging</span>
+                <span class="project-eyebrow">University project · Messaging</span>
                 <h3 class="text-3xl lg:text-4xl font-bold mb-6 text-gray-900 dark:text-white">Chat Application</h3>
                 <div class="space-y-6 mb-8">
                   <div>
                     <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
-                      <svg class="w-5 h-5 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg class="w-5 h-5 text-blue-500 dark:text-blue-400" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
                       </svg>
-                      Problem Solved
+                      What it does
                     </h4>
                     <p class="text-gray-600 dark:text-gray-400 text-base leading-relaxed">A Laravel messaging app with
                       authenticated one-to-one conversations. Uses the Pusher API to push new messages to recipients in
@@ -901,26 +897,30 @@
                   </div>
                   <div>
                     <h4 class="font-semibold text-gray-800 dark:text-gray-200 mb-2 flex items-center gap-2">
-                      <svg class="w-5 h-5 text-cyan-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <svg class="w-5 h-5 text-blue-500 dark:text-blue-400" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                           d="M10 20l4-16m4 4l4 4m-4 12l4-4m-12 0l-4-4m4-4l-4-4"></path>
                       </svg>
                       Technologies
                     </h4>
                     <div class="flex flex-wrap gap-2">
-                      <span
-                        class="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 rounded-full text-xs font-medium">Laravel</span>
-                      <span
-                        class="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 rounded-full text-xs font-medium">Pusher</span>
-                      <span
-                        class="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 rounded-full text-xs font-medium">MySQL</span>
-                      <span
-                        class="px-3 py-1 bg-cyan-100 dark:bg-cyan-900/30 text-cyan-700 dark:text-cyan-300 rounded-full text-xs font-medium">JavaScript</span>
+                      <span class="skill-tag tech-tag"><img src="icons/laravel.svg" alt="" width="16" height="16"
+                          decoding="async">Laravel</span>
+                      <span class="skill-tag tech-tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                          aria-hidden="true">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 10V3L4 14h7v7l9-11h-7z" />
+                        </svg>Pusher</span>
+                      <span class="skill-tag tech-tag"><img src="icons/mysql.svg" alt="" width="16" height="16"
+                          decoding="async">MySQL</span>
+                      <span class="skill-tag tech-tag"><img src="icons/javascript.svg" alt="" width="16" height="16"
+                          decoding="async">JavaScript</span>
                     </div>
                   </div>
                 </div>
-                <a href="https://github.com/MahadeHasanSabbir/chat-app" target="_blank" rel="noopener"
-                  class="inline-flex items-center justify-center gap-3 bg-cyan-600 hover:bg-cyan-700 text-white px-8 py-4 rounded-xl font-bold transition-all transform hover:scale-105 shadow-xl">
+                <a href="https://github.com/MahadeHasanSabbir/chat-app" target="_blank" rel="noopener noreferrer"
+                  class="btn-primary btn-lg">
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20">
                     <path fill-rule="evenodd"
                       d="M10 0C4.477 0 0 4.484 0 10.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0110 4.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.203 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.942.359.31.678.921.678 1.856 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0020 10.017C20 4.484 15.522 0 10 0z"
@@ -945,10 +945,10 @@
   </section>
 
   <!-- ===================== EXPERIENCE ===================== -->
-  <section id="experience"
-    class="min-h-screen flex flex-col justify-center items-center px-4 py-20 bg-gradient-to-br from-gray-50 to-blue-50 dark:from-gray-800 dark:to-gray-900">
+  <section id="experience" class="px-4 py-24 section-alt">
     <div class="max-w-6xl mx-auto w-full">
-      <h2 class="text-4xl font-bold mb-12 text-center text-gray-800 dark:text-white animate-on-scroll">Experience</h2>
+      <p class="section-eyebrow animate-on-scroll">// experience</p>
+      <h2 class="section-title mb-12 animate-on-scroll">Where I work.</h2>
 
       <div class="relative">
         <!-- Experience entries -->
@@ -962,13 +962,14 @@
                 </path>
               </svg>
             </div>
-            <div class="experience-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border-l-4 border-blue-500">
+            <div
+              class="experience-card bg-white dark:bg-slate-800/60 p-6 border border-gray-200 dark:border-white/10">
               <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <h3 class="text-xl font-bold text-gray-800 dark:text-white">Junior Back-end Developer (OTA Systems)</h3>
-                <span class="text-sm text-blue-600 dark:text-blue-400 font-medium mt-1 md:mt-0">September 2025 –
+                <span class="text-sm font-mono text-gray-500 dark:text-gray-400 mt-1 md:mt-0">September 2025 –
                   Present</span>
               </div>
-              <div class="commit-meta">Innovate Solution • OTA backend release</div>
+              <div class="commit-meta">Innovate Solution • Dhaka • Promoted from internship</div>
               <div class="commit-message">Implemented feature-rich OTA backend modules and shipped API improvements for
                 real-time booking flows.</div>
               <div class="commit-changes mb-4">
@@ -978,30 +979,24 @@
                   performance.</div>
                 <div class="commit-change">Integrated payment gateways and third-party travel data services with robust
                   error handling.</div>
-                <div class="commit-change">Built webhook handlers to process asynchronous payment events reliably and keep
+                <div class="commit-change">Built webhook handlers to process asynchronous payment events reliably and
+                  keep
                   bookings in sync.</div>
                 <div class="commit-change">Refactored legacy endpoints to improve scalability and maintainability.</div>
                 <div class="commit-change fix">Fixed API response delays and reduced backend processing time for
                   high-volume requests.</div>
               </div>
               <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">PHP</span>
-                <span
-                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Server
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">Server
                   Operations</span>
-                <span
-                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">MySQL</span>
-                <span
-                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">REST
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">REST
                   APIs</span>
-                <span
-                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Webhooks</span>
-                <span
-                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">Payment
+                <span class="skill-tag">Webhooks</span>
+                <span class="skill-tag">Payment
                   Gateways</span>
-                <span
-                  class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-200 rounded-full text-sm">OTA
+                <span class="skill-tag">OTA
                   Systems</span>
               </div>
             </div>
@@ -1010,21 +1005,22 @@
           <!-- Experience Item 2 -->
           <div class="experience-entry animate-on-scroll flex flex-row gap-6 items-start">
 
-            <div class="experience-point bg-gradient-to-br from-green-500 to-green-600">
+            <div class="experience-point">
               <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
                 <path fill-rule="evenodd"
                   d="M3 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 4a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
                   clip-rule="evenodd"></path>
               </svg>
             </div>
-            <div class="experience-card bg-white dark:bg-gray-800 rounded-lg shadow-lg p-6 border-l-4 border-green-500">
+            <div
+              class="experience-card bg-white dark:bg-slate-800/60 p-6 border border-gray-200 dark:border-white/10">
               <div class="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
                 <h3 class="text-xl font-bold text-gray-800 dark:text-white">Back-end Developer Intern</h3>
-                <span class="text-sm text-green-600 dark:text-green-400 font-medium mt-1 md:mt-0">March 2025 –
+                <span class="text-sm font-mono text-gray-500 dark:text-gray-400 mt-1 md:mt-0">March 2025 –
                   September 2025</span>
 
               </div>
-              <div class="commit-meta">Innovate Solution • Internship sprint</div>
+              <div class="commit-meta">Innovate Solution • Dhaka • Internship</div>
               <div class="commit-message">Contributed core backend support for OTA services, helped stabilize
                 integration flows, and prepared the codebase for production use.</div>
               <div class="commit-changes mb-4">
@@ -1036,15 +1032,11 @@
                 <div class="commit-change fix">Fixed edge-case failures during booking and data refresh cycles.</div>
               </div>
               <div class="flex flex-wrap gap-2">
-                <span
-                  class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">PHP</span>
-                <span
-                  class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">MySQL</span>
-                <span
-                  class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">REST
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">MySQL</span>
+                <span class="skill-tag">REST
                   APIs</span>
-                <span
-                  class="px-3 py-1 bg-green-100 dark:bg-green-900 text-green-800 dark:text-green-200 rounded-full text-sm">Internship</span>
+                <span class="skill-tag">Internship</span>
               </div>
             </div>
           </div>
@@ -1054,54 +1046,57 @@
   </section>
 
   <!-- ===================== RESUME ===================== -->
-  <section id="resume"
-    class="min-h-screen flex flex-col justify-center items-center px-4 py-20 animate-slideUp bg-white dark:bg-gray-900">
-    <div class="max-w-4xl mx-auto text-center">
-      <h2 class="text-4xl font-bold mb-6 text-gray-800 dark:text-white animate-on-scroll">Resume & CV</h2>
-      <p class="text-lg text-gray-600 dark:text-gray-300 mb-8 animate-on-scroll">Download my resume and CV to learn more
-        about my experience and qualifications</p>
+  <section id="resume" class="px-4 py-24">
+    <div class="max-w-6xl mx-auto">
+      <p class="section-eyebrow animate-on-scroll">// resume</p>
+      <h2 class="section-title animate-on-scroll">The paper version.</h2>
+      <p class="text-gray-500 dark:text-gray-400 mt-4 mb-10 max-w-2xl animate-on-scroll">
+        A one-page resume for a quick read, or the detailed CV with full education, projects and personal details.
+      </p>
 
-      <div class="flex flex-col sm:flex-row gap-6 justify-center animate-scale">
-        <a href="Md_Mahade_Hasan_Sabbir_CV.pdf" download
-          class="bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white px-8 py-4 rounded-lg transition transform hover:scale-105 shadow-lg font-semibold flex items-center justify-center gap-2">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd"
-              d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586 14.293 5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-          Download CV
-        </a>
-
-        <a href="Md_Mahade_Hasan_Sabbir_Resume.pdf" download
-          class="bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white px-8 py-4 rounded-lg transition transform hover:scale-105 shadow-lg font-semibold flex items-center justify-center gap-2">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path fill-rule="evenodd"
-              d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586 14.293 5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
-              clip-rule="evenodd"></path>
-          </svg>
-          Download Resume
-        </a>
-
-        <a href="Md_Mahade_Hasan_Sabbir_CV.pdf" target="_blank"
-          class="bg-gradient-to-r from-purple-500 to-purple-600 hover:from-purple-600 hover:to-purple-700 text-white px-8 py-4 rounded-lg transition transform hover:scale-105 shadow-lg font-semibold flex items-center justify-center gap-2">
-          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
-            <path
-              d="M11 3a1 1 0 100 2h2.586l-6.293 6.293a1 1 0 101.414 1.414L15 6.414V9a1 1 0 102 0V4a1 1 0 00-1-1h-5z">
-            </path>
-            <path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
-          </svg>
-          View Documents
-        </a>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-6 animate-on-scroll">
+        <div class="doc-card">
+          <p class="doc-card__label">Resume · 1 page</p>
+          <h3 class="doc-card__title">Experience, skills &amp; selected projects</h3>
+          <div class="doc-card__actions">
+            <a href="Md_Mahade_Hasan_Sabbir_Resume.pdf" download class="btn-primary">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586 14.293 5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              Download
+            </a>
+            <a href="Md_Mahade_Hasan_Sabbir_Resume.pdf" target="_blank" rel="noopener noreferrer"
+              class="btn-ghost">View</a>
+          </div>
+        </div>
+        <div class="doc-card">
+          <p class="doc-card__label">CV · 2 pages</p>
+          <h3 class="doc-card__title">Full education, all projects &amp; personal info</h3>
+          <div class="doc-card__actions">
+            <a href="Md_Mahade_Hasan_Sabbir_CV.pdf" download class="btn-primary">
+              <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+                <path fill-rule="evenodd"
+                  d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586 14.293 5.293a1 1 0 111.414 1.414l-6 6a1 1 0 01-1.414 0l-6-6a1 1 0 010-1.414z"
+                  clip-rule="evenodd"></path>
+              </svg>
+              Download
+            </a>
+            <a href="Md_Mahade_Hasan_Sabbir_CV.pdf" target="_blank" rel="noopener noreferrer" class="btn-ghost">View</a>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- ===================== CONTACT ===================== -->
-  <section id="contact"
-    class="min-h-screen flex flex-col justify-center items-center px-4 py-20 bg-gradient-to-br from-green-50 via-blue-50 to-purple-50 dark:from-green-900 dark:via-blue-900 dark:to-purple-900">
+  <section id="contact" class="px-4 py-24 section-alt">
     <div class="max-w-4xl mx-auto text-center w-full">
-      <h2 class="text-4xl font-bold mb-6 text-gray-800 dark:text-white animate-on-scroll">Get In Touch</h2>
-      <p class="text-lg text-gray-700 dark:text-gray-300 mb-6 animate-on-scroll">Let's discuss your next project</p>
+      <p class="section-eyebrow animate-on-scroll">// contact</p>
+      <h2 class="section-title animate-on-scroll">Let's talk.</h2>
+      <p class="text-lg text-gray-500 dark:text-gray-400 mt-4 mb-8 animate-on-scroll">Have a backend problem, an idea to
+        collaborate on, or just want to say hello? Send a message below.</p>
 
       <!-- Timezone comparison card -->
       <div
@@ -1124,7 +1119,7 @@
       </div>
 
       <form name="contact" method="POST" action="/" data-netlify="true" netlify-honeypot="bot-field"
-        class="contact-form space-y-6 w-full max-w-lg bg-white/95 dark:bg-gray-800/95 backdrop-blur-sm p-8 rounded-2xl shadow-2xl border border-gray-200/50 dark:border-white/20 mx-auto">
+        class="contact-form space-y-6 w-full max-w-lg bg-white dark:bg-slate-800/60 p-8 rounded-2xl border border-gray-200 dark:border-white/10 mx-auto">
         <input type="hidden" name="form-name" value="contact" />
         <p class="hidden"><label>Don't fill this out: <input name="bot-field" /></label></p>
 
@@ -1151,7 +1146,7 @@
 
         <div class="animate-scale pt-2">
           <button type="submit"
-            class="w-full bg-gradient-to-r from-blue-500 via-purple-500 to-green-500 hover:from-blue-600 hover:via-purple-600 hover:to-green-600 text-white py-4 px-6 text-base rounded-lg transition-all duration-300 transform hover:scale-105 shadow-lg font-semibold flex items-center justify-center gap-2">
+            class="w-full bg-blue-600 hover:bg-blue-700 text-white py-4 px-6 text-base rounded-lg transition-colors font-semibold flex items-center justify-center gap-2">
             <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
               <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
               <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
@@ -1162,16 +1157,19 @@
         </div>
       </form>
 
-      <p class="mt-6 text-sm text-gray-600 dark:text-gray-400 animate-on-scroll">
+      <p
+        class="mt-6 text-sm text-gray-600 dark:text-gray-400 flex flex-wrap items-center justify-center gap-2 animate-on-scroll">
         Prefer email?
         <a href="mailto:mahadehasanbd00@gmail.com"
-          class="inline-flex items-center gap-1 font-medium text-blue-600 dark:text-blue-400 hover:underline">
-          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
-            <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path>
-            <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path>
+          class="font-medium text-blue-600 dark:text-blue-400 hover:underline">mahadehasanbd00@gmail.com</a>
+        <button type="button" class="copy-email" data-copy="mahadehasanbd00@gmail.com" aria-label="Copy email address">
+          <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z">
+            </path>
           </svg>
-          mahadehasanbd00@gmail.com
-        </a>
+          <span class="copy-email__label">copy</span>
+        </button>
       </p>
     </div>
   </section>
@@ -1180,14 +1178,15 @@
   <footer class="py-12 border-t border-gray-200 dark:border-white/10 transition-colors duration-400">
     <div class="max-w-6xl mx-auto px-4 text-center">
       <div class="flex justify-center gap-6 mb-8">
-        <a href="https://github.com/MahadeHasanSabbir" target="_blank"
-          class="text-gray-400 hover:text-blue-600 transition-colors">
+        <a href="https://github.com/MahadeHasanSabbir" target="_blank" rel="noopener noreferrer"
+          aria-label="GitHub profile" class="text-gray-400 hover:text-blue-600 transition-colors">
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
             <path
               d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.041-1.416-4.041-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
           </svg>
         </a>
-        <a href="https://linkedin.com/in/mahadehasansabbir " target="_blank" class="text-gray-400 hover:text-blue-600 transition-colors">
+        <a href="https://linkedin.com/in/mahadehasansabbir" target="_blank" rel="noopener noreferrer"
+          aria-label="LinkedIn profile" class="text-gray-400 hover:text-blue-600 transition-colors">
           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
             <path
               d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.761 0 5-2.239 5-5v-14c0-2.761-2.239-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
@@ -1195,7 +1194,7 @@
         </a>
       </div>
       <p class="text-gray-500 dark:text-gray-400 text-sm">
-        &copy; 2026 Md Mahade Hasan Sabbir. All rights reserved.
+        &copy; <span class="js-year">2026</span> Md Mahade Hasan Sabbir
       </p>
     </div>
   </footer>
@@ -1205,7 +1204,7 @@
 
   <!-- Scripts -->
   <script src="swiper-bundle.min.js" defer></script>
-  <script src="script.js?v=5" defer></script>
+  <script src="script.js?v=7" defer></script>
 </body>
 
 </html>

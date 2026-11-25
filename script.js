@@ -9,9 +9,13 @@
    6. Projects slider (Swiper)
    7. Contact form: real submit with success/error feedback
    8. Active nav link highlighting on scroll
+   9. Live clocks (Dhaka + visitor's local time)
+  10. Copy-email button + footer year
    ===================================================== */
 
 document.addEventListener('DOMContentLoaded', () => {
+
+  const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   /* ---------- 1. Theme toggle ---------- */
   const themeToggle = document.getElementById('theme-toggle');
@@ -61,15 +65,17 @@ document.addEventListener('DOMContentLoaded', () => {
       const target = document.querySelector(this.getAttribute('href'));
       if (target) {
         e.preventDefault();
-        target.scrollIntoView({ behavior: 'smooth' });
+        target.scrollIntoView({ behavior: reduceMotion ? 'auto' : 'smooth' });
       }
     });
   });
 
   /* ---------- 4. Typing animation ---------- */
   const typedEl = document.getElementById('typed-text');
-  if (typedEl) {
-    const phrases = ['Back-end Developer', 'PHP & Laravel Specialist'];
+  const phrases = ['Back-end Developer', 'PHP & MySQL Developer', 'Building OTA travel APIs'];
+  if (typedEl && reduceMotion) {
+    typedEl.textContent = phrases[0];
+  } else if (typedEl) {
     let text = '';
     let phraseIndex = 0;
     let deleting = false;
@@ -123,12 +129,11 @@ document.addEventListener('DOMContentLoaded', () => {
         spaceBetween: 20,
         centeredSlides: true,
         loop: true,
-        autoHeight: true,
         grabCursor: true,
         // Recover cleanly if the slider is initialised while hidden or the DOM changes
         observer: true,
         observeParents: true,
-        autoplay: { delay: 5000, disableOnInteraction: false },
+        autoplay: reduceMotion ? false : { delay: 6000, disableOnInteraction: true },
         pagination: { el: '.swiper-pagination', clickable: true },
         navigation: { nextEl: '.swiper-button-next', prevEl: '.swiper-button-prev' },
         breakpoints: {
@@ -233,5 +238,28 @@ document.addEventListener('DOMContentLoaded', () => {
     tickClocks();
     setInterval(tickClocks, 1000);
   }
+
+  /* ---------- 10. Copy email + footer year ---------- */
+  const copyBtn = document.querySelector('.copy-email');
+  if (copyBtn) {
+    const label = copyBtn.querySelector('.copy-email__label');
+    copyBtn.addEventListener('click', async () => {
+      try {
+        await navigator.clipboard.writeText(copyBtn.dataset.copy);
+        copyBtn.classList.add('is-copied');
+        label.textContent = 'copied';
+        setTimeout(() => {
+          copyBtn.classList.remove('is-copied');
+          label.textContent = 'copy';
+        }, 1800);
+      } catch (e) {
+        window.location.href = 'mailto:' + copyBtn.dataset.copy;
+      }
+    });
+  }
+
+  document.querySelectorAll('.js-year').forEach(el => {
+    el.textContent = new Date().getFullYear();
+  });
 
 });
